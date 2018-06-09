@@ -10,6 +10,7 @@
 .tpub.sm img:nth-child(1) {
     float: left;
     margin-right: 2%;
+    left: 0;
 }
 
 .tpub.sm .info-pub {
