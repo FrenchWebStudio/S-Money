@@ -1,0 +1,521 @@
+/* FICHE TITRE */
+#tpub .content {
+    position: relative;
+    width: 1200px;
+    display: inline-block;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.tpub.sm img:nth-child(1) {
+    float: left;
+    margin-right: 2%;
+}
+
+.tpub.sm .info-pub {
+	width: 75%;
+	float: right;
+}
+
+#tpub .info-pub p,
+#tpub .info-pub a {
+    font-family: 'maven_medium','Arial',sans-serif;
+    font-size: 16px;
+    text-align: left;
+    color: #5a5969;
+    line-height: 24px;
+    text-decoration: none;
+}
+
+#tpub .info-social {
+	float: right;
+}
+
+#tpub .info-social a {
+	float: left;
+	margin-right: 20px;
+}
+
+#tpub .info-social a:nth-child(2),
+#tpub .info-social a:nth-child(3) {
+	text-indent: -9999px;
+}
+
+#tpub .info-social a:nth-child(2) {
+	width: 11px;
+	height: 18px;
+	background: url('images/titre/facebook.png') no-repeat center;
+}
+
+#tpub .info-social a:nth-child(3) {
+	width: 18px;
+	height: 15px;
+	background: url('images/titre/twitter.png') no-repeat center;
+	margin-right: 0;
+}
+
+.mag-display .Right .descr h2 {
+    color: #585197;
+}
+
+.mag-display .Right .descr p:nth-child(2),
+.mag-display .Right .descr p:nth-child(4),
+.mag-display .Right .descr p:nth-child(6) {
+	font-family: 'maven_bold', 'Arial', sans-serif;
+	font-size: 18px;	
+	color: #373545;
+} 
+
+.mag-display .Right .descr p:nth-child(3),
+.mag-display .Right .descr p:nth-child(5),
+.mag-display .Right .descr p:nth-child(7) {
+	font-family: 'maven', 'Arial', sans-serif;
+	font-size: 15px;
+	color: #5a5969;
+    margin-bottom: 20px;
+}
+
+.mag-display .Right .buy-item {
+	padding-top: 30px;
+}
+
+.mag-display .Right .buy-item h4 {
+	font-family: 'maven_bold', 'Arial', sans-serif;
+	font-size: 18px;	
+	color: #373545;
+	text-transform: uppercase;
+}
+
+.mag-display .Right .buy-item form {
+	margin: 30px 0;
+}
+
+.mag-display .Right .buy-item .price-choice {
+	display: inline-block;
+	margin-top: 20px;
+}
+
+.mag-display .Right .buy-item .price-choice:first-child {
+	margin-top: 0;
+}
+
+.mag-display .Right .buy-item form .price-choice input[type="radio"] {
+	display: none;
+}
+
+.mag-display .Right .buy-item form .price-choice label:before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+ 	border-radius: 10px;
+    margin-right: 10px;
+    position: relative;
+    top: -5px;
+    border: 1px solid #d7d7da;
+}
+
+.mag-display .Right .buy-item form .price-choice input[type=radio]:checked + label:before {
+    content: "\2713";
+    background-color: #373545;
+    border-color: #373545;
+}
+
+/*
+.mag-display .Right .buy-item input[type=radio]:checked + label:before {
+    content: "\2022";
+    color: #000;
+}*/
+
+
+
+.mag-display .Right .buy-item .price-choice label.price {
+	float: left;
+	width: 207px;
+	margin-bottom: 0;
+	margin-top: -6px;
+	text-align: left;
+	font-family: 'maven_bold','Arial', sans-serif;
+	font-size: 50px;
+	color: #585197;
+	cursor: pointer;
+}
+
+.mag-display .Right .buy-item .price-choice p.details {
+	display: inline-block;
+	font-family: 'maven','Arial', sans-serif;
+	font-size: 18px;
+	color: #5a5969;
+	line-height: 25px;
+}
+
+.mag-display .Right .buy-item .price-choice p.details span{
+	font-family: 'maven_bold','Arial', sans-serif;
+	font-size: 20px;
+	color: #585197;
+}
+
+.mag-display .Right .buy-item .price-choice p.details a {
+	font-size: 15px;
+	color: #5a5969;
+}
+
+.mag-display .Right .buy-item .btabo{
+	width: 265px;	
+	height: 70px !important;
+	padding-top: 0;
+	margin-top: 40px;
+    background-color: #585197;
+    font-family: 'maven_medium', 'Arial', 'sans-serif';
+    font-size: 25px;
+    line-height: 70px;
+}
+
+.mag-display .Right .buy-item .btabo:hover{
+    color: #585197;
+    border-color: #585197;
+    background-color: #ffffff;
+}
+
+#mainOldmag .search.old-title {
+	margin-bottom: 30px;
+}
+
+#mainOldmag .search  {
+	float: left;
+	margin-left: 2.5%;
+	padding: 17px 0px;
+	width: 32%;
+	border: 1px solid #e6e6e9;
+}
+
+#mainOldmag .checkbox {
+	float: left;
+	margin: 0 40px;
+	padding: 17px 0;
+}
+
+#mainOldmag .checkbox input[type="checkbox"] {
+	display: none;
+}
+
+#mainOldmag .checkbox label:before {
+    content: "\2713";
+    color: #ffffff;
+    padding: 0 4px;
+    border: 1px solid #e6e6e9;
+    font-size: 15px;
+    text-align: center;
+    line-height: 15px;
+    margin-right: 20px;
+}
+
+#mainOldmag .checkbox input[type=checkbox]:checked + label:before {
+    content: "\2713";
+    font-family: 'maven_bold';
+    font-size: 15px;
+    border-color: #373545;
+    color: #373545;
+    text-align: center;
+    line-height: 15px;
+}
+
+#mainOldmag .checkbox label {
+    font-family: 'maven';
+	font-size: 15px;
+    color: #5a5969;
+    margin-right: 40px;
+}
+
+#mainOldmag .rechercher {
+	float: left;
+	display: inline-block;
+	padding: 17px 50px;
+	font-family: 'maven_medium';
+    font-size: 18px;
+	color: #ffffff;
+	text-align: center;
+	background-color: #373545;
+	border-radius: 2px;
+	text-decoration: none;
+}
+
+#mainOldmag .rechercher:hover {
+	color: #373545;
+	background-color: #ffffff;
+	border: 1px solid #373545;
+}
+
+.tabs input[type=radio] {
+	position: relative;
+	top: -9999px;
+	left: -9999px;
+}
+
+.tabs {
+	width: 100%;
+	list-style: none;
+	position: relative;
+	padding: 0;
+	margin-left: 2.5%;
+}
+
+.tabs li {
+ 	float: left;
+ 	width: 100px;
+}
+
+.tabs label {
+	display: block;
+	padding: 20px;
+	color: #5a5969;
+	font-size: 20px;
+	font-family: 'maven';
+	cursor: pointer;
+	position: relative;
+	border-bottom: 1px solid #e6e6e9;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+
+.tabs label:hover {
+	font-family: 'maven_bold';
+	background: rgba(255, 255, 255, 0.5);
+	top: 0;
+}
+
+[id^="tab"]:checked + label {
+	font-family: 'maven_bold';
+	color: #373545;
+	border-bottom: 0;
+	border-top: 1px solid #e6e6e9;
+	border-right: 1px solid #e6e6e9;
+	border-left: 1px solid #e6e6e9;
+}
+
+[id^="tab"]:checked ~ [id^="tab-content"] {
+ 	display: block;
+}
+
+.tab-content {
+	z-index: 2;
+	display: none;
+	width: 1200px;
+	height: 100%;
+	position: relative;
+	left: 0;
+	margin-top: 30px;
+	box-sizing: border-box;
+	-webkit-animation-duration: 0.5s;
+	-o-animation-duration: 0.5s;
+	-moz-animation-duration: 0.5s;
+	animation-duration: 0.5s;
+}
+
+#tab-content2 {
+	margin-left: -100px;
+}
+
+#tab-content3 {
+	margin-left: -200px;
+}
+
+#tab-content4 {
+	margin-left: -300px;
+}
+
+#tab-content5 {
+	margin-left: -400px;
+}
+
+#tab-content6 {
+	margin-left: -500px;
+}
+
+.tab-content .mag:nth-child(1),
+.tab-content .mag:nth-child(5n) {
+	margin-left: 0;
+}
+
+#mainOldmag .search input {
+	background-position: center left;
+	background-repeat: no-repeat;
+	background-image: url('images/search-grey.png');
+	padding-left: 25px;
+	border: 1px solid #fff;
+	font-size: 0.938em;
+	font-family: 'playfair_italic';
+	font-style: italic;
+	color: #5a5969;
+	width: 300px;
+	float: left;
+	margin-left: 20px;
+}
+
+#mainOldmag .mag .descr  {
+	width: 93%;
+	margin-left: 7%;
+}
+
+#mainOldmag .mag .couv,
+#maindiscover .mag .couv {
+	background-color: #f7f8fa;
+	background-image: none;
+}
+
+#mainOldmag .mag .descr h2,
+#maindiscover .mag .descr h2 {
+	font-family: 'maven_bold';
+    font-size: 20px;
+	color: #373545;
+
+}
+
+#mainOldmag .mag .descr .price {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0;
+    color: #585197;
+    font-size: 20px;
+    font-family: 'maven_bold';
+ }
+
+.zoneblk .mag .btbuy,
+.zoneblk .mag-display .btbuy,
+#mainOldmag .btbuy,
+#maindiscover .btbuy,
+#mainBuy .buyMag .descr .btbuy {
+	width: 100px;
+	display: inline-block;
+	text-align: left;
+	padding: 17px 45px;
+	font-family: 'maven_medium';
+    font-size: 18px;
+	color: #ffffff;
+	background-color: #585197;
+	border-radius: 2px;
+	text-decoration: none;
+	background-image: url('images/numerique.png');
+	background-repeat: no-repeat;
+	background-position: 28% center;
+	text-align: right;
+}
+
+.zoneblk .mag .btbuy:hover,
+.zoneblk .mag-display .btbuy:hover,
+#mainOldmag .btbuy:hover,
+#maindiscover .btbuy:hover,
+#mainBuy .buyMag .descr .btbuy:hover {
+	border: 1px solid #585197;
+	color: #585197;
+	background-color: #ffffff;
+	background-image: url('images/numerique-hover.png');
+}
+
+#mainDiscover {
+	width: 1200px;
+	margin-top: 40px;
+}
+
+#mainDiscover .mag {
+	width: 30%;
+	margin-right: 3%;
+	margin-left: 0;
+}
+
+#mainDiscover .mag:last-child {
+	margin-right: 0;
+}
+
+#mainDiscover .duration,
+#mainDiscover .subtitle {
+	font-size: 16px;
+	font-family: 'maven';
+	color: #5a5969;
+	margin-top: 5px;
+}
+
+#mainDiscover .prices {
+	position: relative;
+	left: 0;
+	bottom: 15px;
+}
+
+#mainDiscover .prices .price.abo {
+	display: inline;
+}
+
+#mainDiscover .prices .price.abo span {
+	color: #FF5E4D;
+}
+
+#mainDiscover .promo {
+	color: #585197;
+	font-family: maven;
+	margin-top: -6px;
+	margin-bottom: 2px;
+}
+
+#mainDiscover .promo span{
+	text-decoration: line-through;
+}
+
+#mainDiscover .prices .sale {
+    float: right;
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    font-weight: 700;
+    color: #FFF;
+    background-color: #FF5E4D;
+    border-radius: 50%;
+    margin-top: -10px;
+    margin-bottom: 15px;
+    position: absolute;
+	right: -9%;
+	bottom: 27%;
+}
+
+#mainDiscover .mag a.oldMag {
+	position: absolute;
+	bottom: -7%;
+	right: 0px;
+	font-family: "maven","Arial","sans-serif";
+	font-size: 15px;
+	color: #373545;
+	margin-top: 25px;
+}
+/* FIN FICHE TITRE */
+
+/* FICHE GUIDE */
+.mag-display .hors-serie.Right .buy-item .price {
+	float: left;
+	margin-left: 50px;
+	text-align: left;
+	font-family: 'maven_bold','Arial', sans-serif;
+	font-size: 50px;
+	color: #585197;
+}
+
+.mag-display .hors-serie.Right .buy-item a.btabo {
+	margin-top: 0;
+}
+
+.linkGuide,
+.mag-display.horsSerie a.linkGuide
+ {
+	width: 57%;
+    display: inline-block;
+    float: right;
+	text-align: right;
+	padding-top: 25px;
+	border-top: 1px solid #e6e6e9;
+    font-family: 'maven', 'Arial', 'sans-serif';
+    font-size: 15px;
+    color: #373545;
+    margin-top: 0;
+}
+/* FIN FICHE GUIDE */
