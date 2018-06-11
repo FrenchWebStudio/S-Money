@@ -1,0 +1,16 @@
+// Headings
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $font-family;
+}
+
+
+h1 {
+	font-size: $heading-1-font-size;
+	line-height: $line-height-30;
+}
+
+h2 {
+	font-size: $heading-2-font-size;
+	line-height: $line-height-25;
+}

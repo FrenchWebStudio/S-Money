@@ -1,12 +1,63 @@
-@import 'base/base';
+// Base
+
+@import "base/variables";
+@import "base/reset";
+
+// Components
+
+@import "components/form";
+@import "components/grid";
+@import "components/layout";
+@import "components/modals";
+@import "components/navigation";
+@import "components/sections";
+@import "components/sidebar";
+@import "components/tooltip";
+@import "components/typography";
+@import "components/footer";
+@import "components/headings";
+@import "components/buttons";
+@import "components/flex";
+
+html, body {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	-webkit-font-smoothing: antialiased;
+}
 
 body {
-	max-width: $content-width;
-    margin: 0 auto;
-	color: $font-color;
-    display: flex;
-    border-radius: 20px;
-	h1 {
-		font-size: $header-size;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	color: $primary-color;
+    background: rgba(255,255,255,1) no-repeat;
+	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 67%, rgba(245,244,245,1) 100%) no-repeat;
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(67%, rgba(255,255,255,1)), color-stop(100%, rgba(245,244,245,1))) no-repeat;
+	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 67%, rgba(245,244,245,1) 100%) no-repeat;
+	background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 67%, rgba(245,244,245,1) 100%) no-repeat;
+	background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 67%, rgba(245,244,245,1) 100%) no-repeat;
+	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 67%, rgba(245,244,245,1) 100%) no-repeat;
+	background-size: cover;
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f5f4f5', GradientType=0 );
+
+	.content {
+		position: relative;
+		top: 110px;
+		background: $white;
+		border: $border-content;
+		box-shadow: $box-shadow-content;
+		padding: 50px;
+		border-radius: $border-radius-content;
+	}
+
+
+	footer {
+		display: flex;
+		position: fixed;
+		width: 100%;
+		left: 0;
+		bottom: 0;
+		background-color: $white;
 	}
 }

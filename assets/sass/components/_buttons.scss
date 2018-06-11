@@ -1,0 +1,14 @@
+.button-default {
+	display: inline-block;
+	padding: $button-padding;
+	margin-top: $button-margin-top;
+	color: $white;
+	background: $button-bg;
+	font-family: $font-family;
+	font-size: $button-font-size;
+	font-weight: $button-font-weight;
+	border-radius: $button-border-radius;
+	-webkit-font-smoothing: antialiased;
+	cursor: pointer;
+}
+
