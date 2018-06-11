@@ -1,0 +1,10 @@
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #343434;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 20px; }
+  body h1 {
+    font-size: 2em; }
