@@ -2,21 +2,36 @@
 	display: flex;
 	padding-top: $footer-padding-top;
 	padding-bottom: $footer-padding-bottom;
-}
 
-.link-footer {
-	position: relative;
-	color: $footer-link-color;
-	font-family: $font-family;
-	font-size: 10px;
-	font-weight: $font-500;
-	text-decoration: underline;
-	padding-left: 15px;
+	* {
+		align-self: flex-end;
+	}
 
-	&:before {
-		content: "|";
-		position: absolute;
-		left: 0;
-		color: #3F3F3F;
+	p {
+		color: $mid-dark;
+		font-size: 9px;
+		line-height: $line-height-14;
+		margin: 0 5px;
+	}
+
+	.link-footer {
+		position: relative;
+		color: $footer-link-color;
+		font-family: $font-family;
+		font-size: 10px;
+		font-weight: $font-500;
+		text-decoration: underline;
+		padding-left: 15px;
+
+		&:before {
+			content: "";
+			position: absolute;
+			left: 0;
+			top: 50%;
+			transform: translateY(-50%);
+			width: 1px;
+			height: 13px;
+			background-color: #3F3F3F;
+		}
 	}
 }
