@@ -1,6 +1,7 @@
 .button-default {
+    position: relative;
 	display: inline-block;
-	padding: $button-padding;
+	padding: $button-default-padding;
 	margin-top: $button-margin-top;
 	color: $white;
 	background: $button-bg;
@@ -11,6 +12,13 @@
 	border-radius: $button-border-radius;
 	-webkit-font-smoothing: antialiased;
 	cursor: pointer;
+
+    &:before {
+        content: url(../img/buttons/stroke.svg);
+        position: absolute;
+        right: 20px;
+        top: 16px;
+    }
 }
 
 .button-inline {
