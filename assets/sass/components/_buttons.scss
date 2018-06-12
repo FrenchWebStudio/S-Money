@@ -7,6 +7,23 @@
 	font-family: $font-family;
 	font-size: $button-font-size;
 	font-weight: $button-font-weight;
+	letter-spacing: 0.2px;
+	border-radius: $button-border-radius;
+	-webkit-font-smoothing: antialiased;
+	cursor: pointer;
+}
+
+.button-inline {
+	display: inline-block;
+	padding: $button-padding;
+	margin-top: 0;
+	color: $primary-color;
+	background: $button-bg-inline;
+	font-family: $font-family;
+	font-size: $button-font-size;
+	font-weight: $button-font-weight;
+	letter-spacing: 0.2px;
+	border: 1px solid $primary-color;
 	border-radius: $button-border-radius;
 	-webkit-font-smoothing: antialiased;
 	cursor: pointer;

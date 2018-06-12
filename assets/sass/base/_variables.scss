@@ -14,9 +14,11 @@
 // Colors
 
 	$primary-color: #924FFF;
+	$secondary-color: #2A006B;
 
 	$white: #ffffff;
 	$black: #000000;
+	$mid-dark: #3F3F3F;
 
 // Typography
 
@@ -41,7 +43,9 @@
 	$font-600: 600;
 	$font-700: 700;
 
-	//Line Height
+	//Line Height$
+	$line-height-14: 14px;
+	$line-height-16: 16px;
 	$line-height-18: 18px;
 	$line-height-20: 20px;
 	$line-height-22: 22px;
@@ -55,6 +59,7 @@
 
 	//Style
 	$button-bg: $primary-color;
+	$button-bg-inline: $white;
 	$button-border-radius: 4px;
 	$button-padding: 15px 20px;
 	$button-border-radius: 4px;
