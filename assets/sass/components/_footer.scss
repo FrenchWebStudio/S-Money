@@ -23,6 +23,7 @@
 		font-weight: $font-500;
 		text-decoration: underline;
 		padding-left: 15px;
+        padding-right: 15px;
         line-height: $line-height-14;
 
 		&:before {
@@ -35,5 +36,9 @@
 			height: 13px;
 			background-color: #3F3F3F;
 		}
+        
+        &.deconnexion{
+            color: $grey-light;
+        }
 	}
 }
