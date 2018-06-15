@@ -12,51 +12,40 @@
 <body>
     <section class="content-aside wrapper">
         <div class="content-left">
-            <div>
-                <div class="border-h2">
-                    <h2>Tout d'abord, je vérifie mon contact !</h2>
-                </div>
-                <div class="item-border">
-                    <p class="texte12-20">Nous avons identifié David Doe comme étant une personne politiquement exposée. Nous le confirmez-vous ? <input id="cb1" class="tgl tgl-light" type="checkbox">
-                    <label class="tgl-btn" for="cb1">
-                        <div class="tgl-rond">
-                        </div>
-                        
-                    </label></p>
-
-                </div>
+            <div class="border-h2">
+                <h2>Pour commencer, je vérifie mon contact !</h2>
             </div>
-                
-            
             <form class="form-position">
                 <div class="item">
-                    <label for="televerser">
-                        <h3>ENVOYEZ-NOUS LE JUSTIFICATIF D’IDENTITÉ DU REPRÉSENTANT LÉGAL</h3>
-                        <div class="televerser">
-                        <p>Glissez/déposez un document ici 
-                        <br/>ou
-                        </p>
-                        <div class="icon-televerser">
-                            <img src="../../assets/img/envoyer-icon.svg">
-                            <span>Télécharger</span>
-                        </div>
-                        </div>
-                        <input id="televerser" name="televerser" type="file" accept=".pdf" multiple>
-                    </label>
-                    <p class="error-message">Format de fichier non valide</p>
+                    <div class="titre-tooltip">
+                        <h3>Code de vérification</h3>
+                        <a href="" title="Veillez à bien garder cette fenêtre ouverte pendant que vous recherchez votre code." class="tooltip">
+                            <span title="">
+                                <img src="../../assets/img/Info-Icon.svg">
+                            </span>
+                        </a>
+                    </div>
+                    <input type="tel" pattern="[0-9]{1}" maxlength="1">
+                    <input type="tel" pattern="[0-9]{1}" maxlength="1">
+                    <input type="tel" pattern="[0-9]{1}" maxlength="1">
+                    <input type="tel" pattern="[0-9]{1}" maxlength="1">
+                    <input type="tel" pattern="[0-9]{1}" maxlength="1">
+                    <input type="tel" pattern="[0-9]{1}" maxlength="1">
                 </div>
+                
                 <div>
                     <button type="submit" class="button-default">
                         Je confirme
                     </button>
                 </div>
             </form>
+                
         </div>
           
         <div class="content-right">
-            <img src="../../assets/img/contact-icon.svg">
+            <img src="../../assets/img/code-icon.svg">
             <p>Pour nous aider à confirmer l’identité du représentant légal, veillez à nous faire parvenir des pièces d’identités recto/verso lisibles, non tronquées et non surchargées.</p>
-            <p class="content-right-plus">Qu’est-ce qu’une personne politiquement exposée ? <a href="">Cliquez ici</a></p>
+            <p class="content-right-plus">Renvoyer le code ? <a href="">Cliquez ici</a></p>
         </div>
     </section>
     

@@ -8,16 +8,18 @@
 	font-family: $font-family;
 	font-size: $button-font-size;
 	font-weight: $button-font-weight;
+    line-height: $line-height-18;
 	letter-spacing: 0.2px;
 	border-radius: $button-border-radius;
 	-webkit-font-smoothing: antialiased;
 	cursor: pointer;
+    border-width: 0px;
 
     &:before {
         content: url(../img/buttons/stroke.svg);
         position: absolute;
-        right: 20px;
-        top: 16px;
+        right: 10px;
+        top: 13px;
     }
 }
 
@@ -35,5 +37,9 @@
 	border-radius: $button-border-radius;
 	-webkit-font-smoothing: antialiased;
 	cursor: pointer;
+    
+    &.position-content{
+        margin-top: $button-margin-top;
+    }
 }
 

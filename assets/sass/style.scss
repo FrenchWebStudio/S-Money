@@ -18,6 +18,7 @@
 @import "components/headings";
 @import "components/buttons";
 @import "components/flex";
+@import "components/css-arrow-mixin";
 
 html, body {
 	width: 100%;
@@ -56,7 +57,6 @@ body {
 		padding: 50px;
 		border-radius: $border-radius-content;
 
-
 		.home-wrapper {
 			h2 {
 				margin-top: 10px;
@@ -86,21 +86,55 @@ body {
 		border-radius: $border-radius-content;
         
         .content-left{
-            display:flex;
-                flex-flow: column wrap;
-                justify-content: space-between;
             flex: 28;
             padding: 0px 40px 40px 40px;
+            display: flex;
+            flex-flow: column wrap;
             
-            h2{
+            .title-image-position{
+                display: flex;
+                align-items: flex-start;
+                
+                img{
+                    margin-right: 20px;
+                    margin-top: 5px;
+                }
+            }
+            
+            h2.validation-h2{
+                color: $green;
+            }
+            
+            h2.erreur-h2{
+                color: $orange;
+            }
+            
+            .border-h2{
                 padding: 20px 0px;
                 border-bottom: $border-content-titre;  
+            }
+            
+            .subtitle-h2{
+                font-size: 11px;
+                line-height: 14px;
+                color: $primary-color;
             }
             
             p{
                 font-size: $content-left-font-size;
                 color: $secondary-color;
                 line-height: $line-height-12;
+            }
+            
+            p.texte12-20{
+                line-height: $line-height-20;
+                font-weight: $font-600;
+            }
+            
+            p.texte12-20-italic{
+                line-height: $line-height-20;
+                font-weight: $font-300;
+                font-style: italic;
             }
             
             .item-border{
@@ -114,6 +148,10 @@ body {
             
             .sous-item{
                 margin-bottom: 10px;
+                
+                p.grey-medium{
+                    color: $grey-medium;
+                }
             }
             
             .sous-item:last-child{
@@ -123,6 +161,49 @@ body {
             label{
                 margin-bottom: 5px;
             }
+            
+            .document-televerse{
+                display: flex;
+                flex-flow: row wrap;
+                align-items: center;
+                
+                .doc-name{
+                    padding: 0 10px;
+                    
+                    &.grey-medium{
+                        color: $grey-medium;
+                    }
+                }
+                
+                .doc-size{
+                    position: relative;
+                    font-size: 10px;
+                    font-weight: $font-500;
+                    padding-left: 11px;
+                    line-height: $line-height-14;
+                    
+                    &.grey-light{
+                        color: $grey-light;
+                    }
+
+                    &:before {
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        width: 1px;
+                        height: 13px;
+                        background-color: $grey-light;
+                    }
+                }
+            }
+            
+            h3.grey-light{
+                color: $grey-light;
+            }
+            
+            
   
         }
         
@@ -134,7 +215,7 @@ body {
             flex: 10;
             background: linear-gradient(to top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(146,79,255,1) 250%) no-repeat;
             border-left: $border-content;
-            padding: 40px;
+            padding: 40px 35px;
             position: relative;
             
             p{
@@ -155,6 +236,15 @@ body {
                 position: absolute;
                 bottom: 40px;
                 font-style: normal;
+                width: 100%;
+                padding: 0 10px;
+                
+                &.error-message-style{
+                    color: $orange;
+                    font-size: 11px;
+                    font-weight: 500;
+                    line-height: $line-height-12;
+                }
             }
         }
         

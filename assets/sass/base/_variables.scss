@@ -20,6 +20,10 @@
 	$black: #000000;
 	$mid-dark: #3F3F3F;
     $grey-light: #B5B2B8;
+    $grey-medium: #837F87;
+    $green: #3FBB92;
+    $grey-white: #FDFDFD;
+    $orange: #FF8F2D;
 
 // Typography
 
@@ -67,8 +71,8 @@
 	$button-bg: $primary-color;
 	$button-bg-inline: $white;
 	$button-border-radius: 4px;
-    $button-default-padding: 15px 40px 15px 20px;
-	$button-padding: 15px 20px;
+    $button-default-padding: 11px 25px 11px 10px;
+	$button-padding: 11px 10px 11px 10px;
 	$button-border-radius: 4px;
 	$button-margin-top: 50px;
 
@@ -87,6 +91,7 @@
 	$border-content: 1px solid rgba(145,160,171,0.35);
     $border-color-tooltip: rgba(145,160,171,0.35);
 	$box-shadow-content: 1px 0px 9px 0px rgba(145,160,171,0.2);
+    $box-shadow-form: 1px 0px 9px 0px rgba(145,160,171,0.35);
 	$border-radius-content: 3px;
 
 

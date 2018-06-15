@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="41px" height="37px" viewBox="0 0 41 37" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>warning-icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="INSC5-InfosBancaires/NonValidé" transform="translate(-267.000000, -277.000000)">
+            <g id="Card" transform="translate(231.000000, 228.000000)">
+                <g id="warning-icon" transform="translate(38.000000, 51.000000)">
+                    <path d="M35.5699312,31 L19.4300688,31 C18.6406749,31 18,30.3097271 18,29.4580445 L18,1.54143646 C18,0.690272895 18.6406749,0 19.4300688,0 L30.7188126,0 L37,7.32415871 L37,29.4580445 C37,30.3097271 36.3598397,31 35.5699312,31 Z" id="Stroke-3" stroke="#FF8F2D" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <polyline id="Stroke-5" stroke="#FF8F2D" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" points="30 1 30 7 36 7"></polyline>
+                    <circle id="Oval-2" stroke="#FF8F2D" stroke-width="2.2" fill="#FFFFFF" cx="13" cy="20" r="13"></circle>
+                    <text id="!" font-family="Montserrat-Bold, Montserrat" font-size="16" font-weight="bold" letter-spacing="0.7111111" fill="#FF8F2D">
+                        <tspan x="10.3324445" y="26">!</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

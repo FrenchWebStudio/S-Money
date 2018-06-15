@@ -1,3 +1,8 @@
+input:focus, label:focus{
+    box-shadow: $box-shadow-form;
+    outline: inherit;
+}
+
 input[type="text"]{
     width: 100%;
     height: 35px;
@@ -11,26 +16,24 @@ input[type="text"]{
     }
 }
 
-#televerser{
-    display:none;
-}
 
 .error-message{
     display:none;
 }
 
-label:invalid .error-message{
-            
+form.form-position{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    flex: auto;
 }
 
 label[for="televerser"]{
     cursor: pointer;
+    position: relative;
     
     #televerser{
-            position: absolute;
-            width: 100%;
-            height:100%;
-            z-index: 10;
+            display: none;
         }
     
     .televerser{
@@ -61,6 +64,95 @@ label[for="televerser"]{
         
     }
     
+}
+
+input[type="tel"]{
+    width: 30px;
+    height: 35px;
+    border-radius: 2px;
+    border: 1px solid $grey-light;
+    background: $grey-white;
+    margin-right: 8px;
+}
+
+.content-aside .content-left .tgl {
+	display: none;
+  
+	// add default box-sizing for this scope
+	&,
+  &:after,
+  &:before,
+	& *,
+  & *:after,
+  & *:before,
+	& + .tgl-btn {
+		box-sizing: border-box;
+		&::selection {
+			background: none;
+		}
+	}
+  
+	+ label.tgl-btn {
+		outline: 0;
+		display: inline-block;
+		width: 34px;
+		height: 15px;
+		position: relative;
+		cursor: pointer;
+        margin-bottom: 0px;
+        margin-left: 10px;
+        transform: translateY(3px);
+    user-select: none;
+		&:after {
+			position: absolute;
+			display: block;
+			content: url(../../img/check.svg);
+			width: 19px;
+			height: 19px;
+            top: -2px;
+            border: $border-color-tooltip;
+            box-shadow: $box-shadow-form;
+		}
+    
+		&:after {
+			left: 0;
+		}
+    
+		&:before {
+			position: absolute;
+            top: 0;
+            left: 45px;
+            content: "non";
+            transform: translateY(-3px);
+		}
+	}
+  
+	&:checked + .tgl-btn:after {
+		left: 50%;
+        content: url(../../img/check.svg);
+	}
+    
+    &:checked + .tgl-btn:before {
+		content: "oui";
+	}
+}
+
+.tgl-light {
+	+ .tgl-btn {
+		background: $primary-color;
+		border-radius: 2em;
+		padding: 2px;
+		transition: all .4s ease;
+		&:after {
+			border-radius: 50%;
+			background: #fff;
+			transition: all .2s ease;
+		}
+	}
+  
+	&:checked + .tgl-btn {
+		background: $green;
+	}
 }
 
 
