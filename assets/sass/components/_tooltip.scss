@@ -37,28 +37,32 @@
 
 // Okay legit CSS now
 .special-text {
-  position: relative;
-  cursor: pointer;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 0px 20px 2px 10px;
 }
 
 /* Show the tooltip on hover */
 .special-text:hover .special-text__tooltip {
-  visibility: visible;
-  opacity: 1;
+    visibility: visible;
+    opacity: 1;
 }
 
-.special-text__tooltip {
-  font-size: 14px;
+.special-text__tooltip {  
+  font-size: 9px;
   
   position: absolute;
-  width: 264px;
-  left: 0%;
-  bottom: 100%;
-  margin-bottom: 15px;
-  padding: 10px;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-  border: 1px solid #FF00FF;
-  border-radius: 3px;
+  width: 265px;
+  left: 95%;
+  margin-bottom: 0px;
+  padding: 13px 15px;
+  box-shadow: $box-shadow-form;
+  border: 1px solid $border-color-tooltip;
+  border-radius: 12px;
+  background: white;
+    z-index: 10;
   
   /* Hide the tooltip by default */
   visibility: hidden;
@@ -70,27 +74,27 @@
 }
 
 /* The bordered part of the triangle */
-$border-width: 1px;
+$border-width: 10px;
 
 .special-text__tooltip::before,
 .special-text__tooltip::after {
   content: "";
   position: absolute;
-  border-left: $border-width solid transparent;
-  border-right: $border-width solid transparent;
-  top: 100%;
-  left: 50%;
-  margin-left: -$border-width;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  top: 50%;
+  right: 100%;
+  margin-top: -5px;
 }
 
 .special-text__tooltip::before {
-  border-top: $border-width solid #FF00FF;
-  margin-top: 5px;
+  border-right: $border-width solid $border-color-tooltip;
+  margin-right: 0.5px;
 }
 
 /* The white fill of the triangle */
 .special-text__tooltip::after {
-  border-top: $border-width solid white;
-  margin-top: -2px;
+  border-right: $border-width solid white;
+  margin-right: -2px;
   z-index: 1;
 }

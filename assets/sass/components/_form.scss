@@ -17,8 +17,20 @@ input[type="text"]{
 }
 
 
-.error-message{
+#error-message{
     display:none;
+    
+    &.error-message-style{
+        margin-top: 5px;
+        color: $orange;
+        font-size: 11px;
+        font-weight: 500;
+        line-height: $line-height-12;
+    }
+}
+
+#error-message.error-message-visible{
+    display: block;
 }
 
 form.form-position{
@@ -28,13 +40,27 @@ form.form-position{
     flex: auto;
 }
 
+#televerser{
+    position: absolute;
+    min-width: 462px;
+    height: 115px;
+    opacity: 0;
+    z-index: 2;
+    
+    &:invalid{
+        opacity: 1;
+        background-color: red;
+    }
+    
+    &:invalid ~ .error-message{
+        display: block;
+    }
+}
+
 label[for="televerser"]{
     cursor: pointer;
     position: relative;
-    
-    #televerser{
-            display: none;
-        }
+    width: 100%;
     
     .televerser{
         width: 100%;

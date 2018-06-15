@@ -19,10 +19,8 @@
                 <div class="item-border">
                     <p class="texte12-20">Nous avons identifié David Doe comme étant une personne politiquement exposée. Nous le confirmez-vous ? <input id="cb1" class="tgl tgl-light" type="checkbox">
                     <label class="tgl-btn" for="cb1">
-                        <div class="tgl-rond">
-                        </div>
-                        
-                    </label></p>
+                    </label>
+                    </p>
 
                 </div>
             </div>
@@ -30,6 +28,7 @@
             
             <form class="form-position">
                 <div class="item">
+                    <input id="televerser" name="televerser" type="file" onchange="return fileValidation()"  multiple>
                     <label for="televerser">
                         <h3>ENVOYEZ-NOUS LE JUSTIFICATIF D’IDENTITÉ DU REPRÉSENTANT LÉGAL</h3>
                         <div class="televerser">
@@ -41,9 +40,8 @@
                             <span>Télécharger</span>
                         </div>
                         </div>
-                        <input id="televerser" name="televerser" type="file" accept=".pdf" multiple>
                     </label>
-                    <p class="error-message">Format de fichier non valide</p>
+                    <p id="error-message" class="error-message error-message-style">Format de fichier non valide</p>
                 </div>
                 <div>
                     <button type="submit" class="button-default">
@@ -73,14 +71,14 @@
                             <img src="../../assets/img/footer/logo-natixis.png" class="logo-natixis" alt="Natixis">
                         </a>
                         <a href="#" class="link-footer" title="Mentions Légales">Mentions Légales</a>
-                        <a href="#" class="link-footer" title="Mentions Légales">Déconnexion</a>
+                        <a href="#" class="link-footer deconnexion" title="Déconnexion">Déconnexion</a>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="assets/js/index.js"></script>
+    <script src="../../assets/js/index.js"></script>
 </body>
 
 </html>
