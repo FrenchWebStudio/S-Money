@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="41px" height="34px" viewBox="0 0 41 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>code-icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="INSC0-CodeVerification" transform="translate(-873.000000, -307.000000)">
+            <g id="Contact-Card" transform="translate(231.000000, 110.000000)">
+                <g id="Expliquations" transform="translate(534.000000, 0.000000)">
+                    <g id="code-icon" transform="translate(109.000000, 198.000000)">
+                        <polygon id="Stroke-2" stroke="#2A006B" fill="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" points="0.197183099 31.7312396 28 31.7312396 28 11.594617 0.197183099 11.594617"></polygon>
+                        <polygon id="Stroke-4" stroke="#2A006B" fill="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" transform="translate(14.113595, 10.060740) scale(1, -1) translate(-14.113595, -10.060740) " points="0.242155154 8.54392889 13.8043944 20.1214807 27.9850343 8.54392889 14.1097847 -7.10542736e-15"></polygon>
+                        <rect id="Rectangle-4" stroke="#2A006B" fill="#FFFFFF" x="17.5" y="4.5" width="22" height="11" rx="2"></rect>
+                        <circle id="Oval" fill="#2A006B" cx="21" cy="10" r="1"></circle>
+                        <circle id="Oval" fill="#2A006B" cx="24" cy="10" r="1"></circle>
+                        <circle id="Oval" fill="#2A006B" cx="27" cy="10" r="1"></circle>
+                        <circle id="Oval" fill="#2A006B" cx="30" cy="10" r="1"></circle>
+                        <circle id="Oval" fill="#2A006B" cx="33" cy="10" r="1"></circle>
+                        <circle id="Oval" fill="#2A006B" cx="36" cy="10" r="1"></circle>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

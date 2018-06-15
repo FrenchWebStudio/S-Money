@@ -1,0 +1,160 @@
+input:focus, label:focus {
+    box-shadow: $box-shadow-form;
+    outline: inherit;
+}
+
+input[type="text"] {
+    width: 100%;
+    height: 35px;
+    border-radius: 2px;
+    border:1px solid $grey-light;
+    padding-left: 10px;
+    color: $secondary-color;
+    
+    &::placeholder{
+        color: $secondary-color;
+    }
+}
+
+.error-message {
+    display:none;
+}
+
+form.form-position {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    flex: auto;
+}
+
+label[for="televerser"] {
+    cursor: pointer;
+    position: relative;
+    
+    #televerser{
+        display: none;
+    }
+    
+    .televerser {
+        width: 100%;
+        height: 85px;
+        border: 1px dashed $grey-light;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        
+        p {
+            margin: 5px;
+        }
+        
+        .icon-televerser {
+            color: $primary-color;
+            font-size: 11px;
+            margin: 5px;
+            display:flex;
+            align-items: center;
+            
+            img {
+                margin-right: 5px;
+            }
+        }
+    }
+}
+
+input[type="tel"] {
+    width: 30px;
+    height: 35px;
+    border-radius: 2px;
+    border: 1px solid $grey-light;
+    background: $grey-white;
+    margin-right: 8px;
+}
+
+.content-aside .content-left .tgl {
+	display: none;
+  
+	// add default box-sizing for this scope
+	&,
+  &:after,
+  &:before,
+	& *,
+  & *:after,
+  & *:before,
+	& + .tgl-btn {
+		box-sizing: border-box;
+		&::selection {
+			background: none;
+		}
+	}
+  
+	+ label.tgl-btn {
+		outline: 0;
+		display: inline-block;
+		width: 34px;
+		height: 15px;
+		position: relative;
+		cursor: pointer;
+        margin-bottom: 0px;
+        margin-left: 10px;
+        transform: translateY(3px);
+        user-select: none;
+
+    		&:after {
+    			position: absolute;
+    			display: block;
+    			content: url(../../img/check.svg);
+    			width: 19px;
+    			height: 19px;
+                top: -2px;
+                border: $border-color-tooltip;
+                box-shadow: $box-shadow-form;
+    		}
+
+    		&:after {
+    			left: 0;
+    		}
+        
+    		&:before {
+			position: absolute;
+            top: 0;
+            left: 45px;
+            content: "Non";
+            font-weight: 500;
+            color: #5D5062;
+            transform: translateY(-3px);
+		}
+    }
+  
+	&:checked + .tgl-btn:after {
+		left: 50%;
+        content: url(../../img/check.svg);
+	}
+        
+    &:checked + .tgl-btn:before {
+		content: "Oui";
+        font-weight: 500;
+        color: #5D5062;
+	}
+}
+
+.tgl-light {
+	+ .tgl-btn {
+		background: $primary-color;
+		border-radius: 2em;
+		padding: 2px;
+		transition: all .4s ease;
+		&:after {
+			border-radius: 50%;
+			background: #fff;
+			transition: all .2s ease;
+		}
+	}
+  
+	&:checked + .tgl-btn {
+		background: $green;
+	}
+}
+
+

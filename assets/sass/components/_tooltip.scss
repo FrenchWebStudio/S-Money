@@ -1,14 +1,14 @@
-.titre-tooltip{
+.titre-tooltip {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
                 
-    .tooltip{
+    .tooltip {
         margin-left: 5px;
         position: relative;               
     }
     
-    .tooltip:hover:after{
+    .tooltip:hover:after {
         background: white;
         border-radius: 8px;
         border: 1px solid $border-color-tooltip;
@@ -23,7 +23,7 @@
         box-shadow: $box-shadow-content;
         
     }
-    .tooltip:hover:before{
+    .tooltip:hover:before {
         border: solid;
         border-color: transparent $border-color-tooltip;
         border-width: 6px 6px 6px 0px;
@@ -34,8 +34,6 @@
     }
 }
 
-
-// Okay legit CSS now
 .special-text {
     position: relative;
     cursor: pointer;
@@ -50,9 +48,9 @@
     opacity: 1;
 }
 
-.special-text__tooltip {  
+
+.special-text__tooltip {
   font-size: 9px;
-  
   position: absolute;
   width: 265px;
   left: 95%;

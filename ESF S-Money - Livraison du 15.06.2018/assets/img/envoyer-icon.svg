@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="14px" viewBox="0 0 12 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Envoyer-Icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="INSC0-ConfirmerContact/PPE" transform="translate(-457.000000, -370.000000)" stroke="#924FFF">
+            <g id="ContactCard" transform="translate(231.000000, 110.000000)">
+                <g id="DropZone" transform="translate(41.000000, 191.000000)">
+                    <g id="Envoyer-Icon" transform="translate(190.576923, 76.000000) rotate(-270.000000) translate(-190.576923, -76.000000) translate(184.576923, 70.500000)">
+                        <polyline id="Stroke-1" points="9.90624 3.08124 11.78124 5.01264 9.90624 6.94344"></polyline>
+                        <polyline id="Stroke-3" points="6.825 6.94404 6.825 10.20024 0.3 10.20024 0.3 0.30024 6.825 0.30024 6.825 3.26304"></polyline>
+                        <path d="M11.325,5.1 L3.525,5.1" id="Stroke-6"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,9 +1,9 @@
-input:focus, label:focus{
+input:focus, label:focus {
     box-shadow: $box-shadow-form;
     outline: inherit;
 }
 
-input[type="text"]{
+input[type="text"] {
     width: 100%;
     height: 35px;
     border-radius: 2px;
@@ -17,7 +17,7 @@ input[type="text"]{
 }
 
 
-#error-message{
+.error-message {
     display:none;
     
     &.error-message-style{
@@ -33,7 +33,7 @@ input[type="text"]{
     display: block;
 }
 
-form.form-position{
+form.form-position {
     display: flex;
     flex-flow: column wrap;
     justify-content: space-between;
@@ -62,7 +62,7 @@ label[for="televerser"]{
     position: relative;
     width: 100%;
     
-    .televerser{
+    .televerser {
         width: 100%;
         height: 85px;
         border: 1px dashed $grey-light;
@@ -72,27 +72,25 @@ label[for="televerser"]{
         text-align: center;
         align-items: center;
         
-        p{
+        p {
             margin: 5px;
         }
         
-        .icon-televerser{
+        .icon-televerser {
             color: $primary-color;
             font-size: 11px;
             margin: 5px;
             display:flex;
             align-items: center;
             
-            img{
+            img {
                 margin-right: 5px;
             }
         }
-        
     }
-    
 }
 
-input[type="tel"]{
+input[type="tel"] {
     width: 30px;
     height: 35px;
     border-radius: 2px;
@@ -128,38 +126,43 @@ input[type="tel"]{
         margin-bottom: 0px;
         margin-left: 10px;
         transform: translateY(3px);
-    user-select: none;
-		&:after {
-			position: absolute;
-			display: block;
-			content: url(../../img/check.svg);
-			width: 19px;
-			height: 19px;
-            top: -2px;
-            border: $border-color-tooltip;
-            box-shadow: $box-shadow-form;
-		}
-    
-		&:after {
-			left: 0;
-		}
-    
-		&:before {
+        user-select: none;
+
+    		&:after {
+    			position: absolute;
+    			display: block;
+    			content: url(../../img/check.svg);
+    			width: 19px;
+    			height: 19px;
+                top: -2px;
+                border: $border-color-tooltip;
+                box-shadow: $box-shadow-form;
+    		}
+
+    		&:after {
+    			left: 0;
+    		}
+        
+    		&:before {
 			position: absolute;
             top: 0;
             left: 45px;
-            content: "non";
+            content: "Non";
+            font-weight: 500;
+            color: #5D5062;
             transform: translateY(-3px);
 		}
-	}
+    }
   
 	&:checked + .tgl-btn:after {
 		left: 50%;
         content: url(../../img/check.svg);
 	}
-    
+        
     &:checked + .tgl-btn:before {
-		content: "oui";
+		content: "Oui";
+        font-weight: 500;
+        color: #5D5062;
 	}
 }
 

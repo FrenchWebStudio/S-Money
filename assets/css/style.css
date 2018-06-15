@@ -187,7 +187,9 @@ input[type="tel"] {
       position: absolute;
       top: 0;
       left: 45px;
-      content: "non";
+      content: "Non";
+      font-weight: 500;
+      color: #5D5062;
       -webkit-transform: translateY(-3px);
           -ms-transform: translateY(-3px);
               transform: translateY(-3px); }
@@ -195,7 +197,9 @@ input[type="tel"] {
     left: 50%;
     content: url(../../img/check.svg); }
   .content-aside .content-left .tgl:checked + .tgl-btn:before {
-    content: "oui"; }
+    content: "Oui";
+    font-weight: 500;
+    color: #5D5062; }
 
 .tgl-light + .tgl-btn {
   background: #924FFF;
@@ -2090,9 +2094,6 @@ input[type="tel"] {
   margin-right: -2px;
   z-index: 1; }
 
-html * {
-  font-family: "Montserrat", "Arial", sans-serif; }
-
 p {
   font-family: "Montserrat", "Arial", sans-serif;
   font-size: 15px;
@@ -2159,6 +2160,9 @@ h3 {
   text-transform: uppercase;
   display: inline-block; }
 
+button:focus, button:active {
+  outline: none; }
+
 .button-default {
   position: relative;
   display: inline-block;
@@ -2213,14 +2217,15 @@ body {
   min-height: 100vh;
   position: relative;
   color: #924FFF;
+  padding-top: 110px;
+  padding-bottom: 153px;
   background: white no-repeat;
   background: -webkit-gradient(left top, left bottom, color-stop(0%, white), color-stop(67%, white), color-stop(100%, #f5f4f5)) no-repeat;
   background: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(67%, white), to(#f5f4f5)) no-repeat;
   background: linear-gradient(to bottom, white 0%, white 67%, #f5f4f5 100%) no-repeat;
   background-size: cover;
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f5f4f5', GradientType=0 );
-  padding-top: 110px;
-  padding-bottom: 153px; }
+  font-family: "Montserrat", "Arial", sans-serif; }
   body .content {
     position: relative;
     max-width: 780px;
@@ -2397,7 +2402,13 @@ body {
     left: 0;
     bottom: 0;
     background-color: #ffffff; }
-  body .cookie-container {
+  body .cookie-bloc input[id="close-cookie"],
+  body .cookie-bloc input[id="accept-cookie"] {
+    display: none; }
+  body .cookie-bloc #close-cookie:checked ~ .cookie-container,
+  body .cookie-bloc #accept-cookie:checked ~ .cookie-container {
+    display: none; }
+  body .cookie-bloc .cookie-container {
     width: 100%;
     position: fixed;
     left: 0;
@@ -2409,7 +2420,7 @@ body {
     padding-bottom: 20px;
     -webkit-box-shadow: 1px 0px 7px 0px rgba(145, 160, 171, 0.2);
             box-shadow: 1px 0px 7px 0px rgba(145, 160, 171, 0.2); }
-    body .cookie-container .cookie-wrapper {
+    body .cookie-bloc .cookie-container .cookie-wrapper {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -2417,21 +2428,17 @@ body {
           -ms-flex-align: center;
               align-items: center;
       max-width: 860px; }
-      body .cookie-container .cookie-wrapper img {
+      body .cookie-bloc .cookie-container .cookie-wrapper img {
         margin-right: 20px; }
-      body .cookie-container .cookie-wrapper p, body .cookie-container .cookie-wrapper a.link-cookie {
+      body .cookie-bloc .cookie-container .cookie-wrapper p, body .cookie-bloc .cookie-container .cookie-wrapper a.link-cookie {
         color: #2A006B;
         font-size: 11px;
         font-weight: 600;
         line-height: 14px; }
-      body .cookie-container .cookie-wrapper label.button-inline {
+      body .cookie-bloc .cookie-container .cookie-wrapper label.button-inline {
         margin-left: 20px; }
-      body .cookie-container .cookie-wrapper label.close-cookie {
+      body .cookie-bloc .cookie-container .cookie-wrapper label.close-cookie {
         position: absolute;
         top: 20px;
         right: 20px;
         cursor: pointer; }
-  body input[id="close-cookie"], body input[id="accept-cookie"] {
-    display: none; }
-  body #close-cookie:checked ~ .cookie-container, body #accept-cookie:checked ~ .cookie-container {
-    display: none; }

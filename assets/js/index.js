@@ -1,12 +1,3 @@
-(function ($) {
-	$(function () {
-		$('button').click(function () {
-			alert("jQuery alert!");
-		});
-	});
-})(jQuery);
-
-
 function fileValidation(){
     var fileInput = document.getElementById('televerser');
     var filePath = fileInput.value;
@@ -20,3 +11,4 @@ function fileValidation(){
         return true;
     }
 }
+
