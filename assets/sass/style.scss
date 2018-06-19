@@ -113,7 +113,7 @@ body {
             display: flex;
             flex-flow: column wrap;
             
-            @media(max-width:800px){
+            @media(max-width:$breakpoint-mobile){
                 padding: 40px 25px;
             }
             
@@ -272,7 +272,7 @@ body {
                 padding: 0 10px;
                 left: 0;
                 
-                @media(max-width:800px){
+                @media(max-width:$breakpoint-mobile){
                     position:static;
                     margin-top: 40px;
                 }

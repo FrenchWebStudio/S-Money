@@ -4,7 +4,7 @@
 	padding-bottom: $footer-padding-bottom;
     align-items: center;
     
-    @media(max-width: 800px){
+    @media(max-width: $breakpoint-mobile){
         flex-flow: column wrap;
     }
     
@@ -39,7 +39,7 @@
             line-height: $line-height-14;
 
             &.link-footer-mobile{
-                @media(max-width:800px){
+                @media(max-width:$breakpoint-mobile){
                     padding-left: 0px;
                     &:before{
                         display:none;
