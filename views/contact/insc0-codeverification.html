@@ -16,7 +16,7 @@
                 <div class="border-h2">
                     <h2>Pour commencer, je vérifie mon contact !</h2>
                 </div>
-                <form class="form-position">
+                <form id="myform" class="form-position">
                     <div class="item">
                         <div class="titre-tooltip">
                             <h3>Code de vérification</h3>
@@ -27,14 +27,14 @@
                                 </span>
                             </div>
                         </div>
-                        <input type="tel" pattern="[0-9]{1}" maxlength="1">
-                        <input type="tel" pattern="[0-9]{1}" maxlength="1">
-                        <input type="tel" pattern="[0-9]{1}" maxlength="1">
-                        <input type="tel" pattern="[0-9]{1}" maxlength="1">
-                        <input type="tel" pattern="[0-9]{1}" maxlength="1">
-                        <input type="tel" pattern="[0-9]{1}" maxlength="1">
+                        <input type="tel" pattern="[0-9]{1}" maxlength="1" class="code-number">
+                        <input type="tel" pattern="[0-9]{1}" maxlength="1" class="code-number">
+                        <input type="tel" pattern="[0-9]{1}" maxlength="1" class="code-number">
+                        <input type="tel" pattern="[0-9]{1}" maxlength="1" class="code-number">
+                        <input type="tel" pattern="[0-9]{1}" maxlength="1" class="code-number">
+                        <input type="tel" pattern="[0-9]{1}" maxlength="1" class="code-number">
                     </div>
-                    <div class="error-message">
+                    <div class="error-message" id="error-message">
                         Oops, il semble que ce code ne soit pas correct !
                         Cliquez sur « Renvoyez le code ? » pour en recevoir un nouveau !
                     </div>
@@ -80,7 +80,7 @@
         </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="assets/js/index.js"></script>
+    <script src="../../assets/js/index.js"></script>
 </body>
 
 </html>

@@ -23,9 +23,10 @@ button {
 	cursor: pointer;
     border-width: 0px;
     
-    @media(max-width:800px){
+    @media(max-width:$breakpoint-mobile){
         display:block;
         width: 100%;
+        max-width: 300px;
     }
 
     &:before {
