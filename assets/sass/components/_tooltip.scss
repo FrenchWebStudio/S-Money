@@ -50,25 +50,30 @@
 
 
 .special-text__tooltip {
-  font-size: 9px;
-  position: absolute;
-  width: 265px;
-  left: 95%;
-  margin-bottom: 0px;
-  padding: 13px 15px;
-  box-shadow: $box-shadow-form;
-  border: 1px solid $border-color-tooltip;
-  border-radius: 12px;
-  background: white;
+    font-size: 9px;
+    line-height: 11px;
+    position: absolute;
+    width: 265px;
+    left: 95%;
+    margin-bottom: 0px;
+    padding: 13px 15px;
+    box-shadow: $box-shadow-form;
+    border: 1px solid $border-color-tooltip;
+    border-radius: 12px;
+    background: white;
     z-index: 10;
-  
-  /* Hide the tooltip by default */
-  visibility: hidden;
-  opacity: 0;
-  
-  /* Prettify */
-  text-align: left;
-  transition: opacity 0.5s linear;
+
+    /* Hide the tooltip by default */
+    visibility: hidden;
+    opacity: 0;
+
+    /* Prettify */
+    text-align: left;
+    transition: opacity 0.5s linear;
+    
+    a{
+        color: $primary-color;
+    }
 }
 
 /* The bordered part of the triangle */

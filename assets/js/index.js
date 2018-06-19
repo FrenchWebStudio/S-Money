@@ -11,4 +11,3 @@ function fileValidation(){
         return true;
     }
 }
-
