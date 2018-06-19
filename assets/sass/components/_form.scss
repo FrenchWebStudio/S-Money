@@ -1,3 +1,7 @@
+input{
+    font-family: $font-family;
+}
+
 input:focus, label:focus {
     box-shadow: $box-shadow-form;
     outline: inherit;
@@ -43,13 +47,16 @@ input[type="text"] {
 #televerser{
     position: absolute;
     min-width: 462px;
-    height: 115px;
+    height: 85px;
     opacity: 0;
     z-index: 2;
     cursor: pointer;
-    @media(max-width:800px){
+    left: 0;
+    top: 0;
+    
+    @media(max-width:$breakpoint-mobile){
+        display: block;
         min-width: 100%;
-        left: 0;
     }
     
     &:invalid{
@@ -102,6 +109,8 @@ input[type="tel"] {
     border: 1px solid $grey-light;
     background: $grey-white;
     margin-right: 8px;
+    font-size: 18px;
+    text-align: center;
 }
 
 .content-aside .content-left .tgl {

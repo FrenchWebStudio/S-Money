@@ -48,7 +48,7 @@ body {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f5f4f5', GradientType=0 );
     font-family: $font-family;
     
-    @media(max-width:800px){
+    @media(max-width:$breakpoint-mobile){
         padding-top: 60px;
         padding-bottom: 127px;
     }
@@ -63,7 +63,7 @@ body {
 		padding: 50px;
 		border-radius: $border-radius-content;
         
-        @media(max-width:800px){
+        @media(max-width:$breakpoint-mobile){
             padding: 40px 25px;
         }
 
@@ -75,7 +75,7 @@ body {
 			img.welcomeIllustration {
 				margin: 50px 0 30px 0;
                 
-                @media(max-width:800px){
+                @media(max-width:$breakpoint-mobile){
                     margin: 20px 0 20px 0;
                 }
 			}
@@ -86,7 +86,7 @@ body {
 				color: $secondary-color;
 				font-weight: $font-600;
                 
-                @media(max-width:800px){
+                @media(max-width:$breakpoint-mobile){
                     max-width: 100%;
                 }
 			}
@@ -103,7 +103,7 @@ body {
 		box-shadow: $box-shadow-content;
 		border-radius: $border-radius-content;
         
-        @media(max-width:800px){
+        @media(max-width:$breakpoint-mobile){
             flex-flow: column wrap;
         }
         
@@ -241,7 +241,7 @@ body {
             padding: 40px 35px;
             position: relative;
             
-            @media(max-width:800px){
+            @media(max-width:$breakpoint-mobile){
                 order: -1;
                 padding: 40px 25px;
                 border-left: none;
@@ -317,7 +317,7 @@ body {
     	    padding-bottom: 20px;
             box-shadow: 1px 0px 7px 0px rgba(145,160,171,0.2);
             
-            @media ( max-width: 800px){
+            @media ( max-width: $breakpoint-mobile){
                 padding-top: 30px;
             }
 
@@ -326,7 +326,7 @@ body {
     	    	align-items: center;
                 max-width: 70%;
                 
-                @media (max-width: 800px){
+                @media (max-width: $breakpoint-mobile){
                     max-width: 100%;
                     flex-flow: column wrap;
                     justify-content: center;
