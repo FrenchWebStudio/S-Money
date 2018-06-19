@@ -3,42 +3,64 @@
 	padding-top: $footer-padding-top;
 	padding-bottom: $footer-padding-bottom;
     align-items: center;
-
-	img.logo-s-money {
-        padding-bottom: 7px;
-	}
-
-	p {
-		color: $mid-dark;
-		font-size: 9px;
-		line-height: $line-height-9;
-		margin: 0 5px;
-	}
-
-	.link-footer {
-		position: relative;
-		color: $footer-link-color;
-		font-family: $font-family;
-		font-size: 10px;
-		font-weight: $font-500;
-		text-decoration: underline;
-		padding-left: 15px;
-        padding-right: 15px;
-        line-height: $line-height-14;
-
-		&:before {
-			content: "";
-			position: absolute;
-			left: 0;
-			top: 50%;
-			transform: translateY(-50%);
-			width: 1px;
-			height: 13px;
-			background-color: #3F3F3F;
-		}
+    
+    @media(max-width: 800px){
+        flex-flow: column wrap;
+    }
+    
+    .content-footer-1{
+        display: flex;
+        align-items: center;
         
-        &.deconnexion{
-            color: $grey-light;
+        img.logo-s-money {
+            padding-bottom: 7px;
         }
-	}
+
+        p {
+            color: $mid-dark;
+            font-size: 9px;
+            line-height: $line-height-9;
+            margin: 0 5px;
+        }
+    }
+    
+    .content-footer-2{
+        padding-bottom: 3px;
+        
+        .link-footer {
+            position: relative;
+            color: $footer-link-color;
+            font-family: $font-family;
+            font-size: 10px;
+            font-weight: $font-500;
+            text-decoration: underline;
+            padding-left: 15px;
+            padding-right: 15px;
+            line-height: $line-height-14;
+
+            &.link-footer-mobile{
+                @media(max-width:800px){
+                    padding-left: 0px;
+                    &:before{
+                        display:none;
+                    }
+                }
+            }
+
+            &:before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 1px;
+                height: 13px;
+                background-color: #3F3F3F;
+            }
+
+            &.deconnexion{
+                color: $grey-light;
+            }
+        }
+    }
 }

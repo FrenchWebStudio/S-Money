@@ -16,24 +16,56 @@ input[type="text"] {
     }
 }
 
+
 .error-message {
     display:none;
+    
+    &.error-message-style{
+        margin-top: 5px;
+        color: $orange;
+        font-size: 11px;
+        font-weight: 500;
+        line-height: $line-height-12;
+    }
 }
 
-form.form-position {
+#error-message.error-message-visible{
+    display: block;
+}
+
+.form-position {
     display: flex;
     flex-flow: column wrap;
     justify-content: space-between;
     flex: auto;
 }
 
-label[for="televerser"] {
+#televerser{
+    position: absolute;
+    min-width: 462px;
+    height: 115px;
+    opacity: 0;
+    z-index: 2;
+    cursor: pointer;
+    @media(max-width:800px){
+        min-width: 100%;
+        left: 0;
+    }
+    
+    &:invalid{
+        opacity: 1;
+        background-color: red;
+    }
+    
+    &:invalid ~ .error-message{
+        display: block;
+    }
+}
+
+label[for="televerser"]{
     cursor: pointer;
     position: relative;
-    
-    #televerser{
-        display: none;
-    }
+    width: 100%;
     
     .televerser {
         width: 100%;
@@ -100,11 +132,12 @@ input[type="tel"] {
         margin-left: 10px;
         transform: translateY(3px);
         user-select: none;
+        margin-right: 40px;
 
     		&:after {
     			position: absolute;
     			display: block;
-    			content: url(../../img/check.svg);
+    			content: url(../../img/check.svg) ;
     			width: 19px;
     			height: 19px;
                 top: -2px;
@@ -155,6 +188,12 @@ input[type="tel"] {
 	&:checked + .tgl-btn {
 		background: $green;
 	}
+}
+
+#code-submit:invalid{
+    ~ .error-message{
+        display: block;
+    }
 }
 
 

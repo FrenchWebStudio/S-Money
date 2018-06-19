@@ -47,6 +47,11 @@ body {
 	background-size: cover;
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f5f4f5', GradientType=0 );
     font-family: $font-family;
+    
+    @media(max-width:800px){
+        padding-top: 60px;
+        padding-bottom: 127px;
+    }
 
 	.content {
 		position: relative;
@@ -57,6 +62,10 @@ body {
 		box-shadow: $box-shadow-content;
 		padding: 50px;
 		border-radius: $border-radius-content;
+        
+        @media(max-width:800px){
+            padding: 40px 25px;
+        }
 
 		.home-wrapper {
 			h2 {
@@ -65,6 +74,10 @@ body {
 
 			img.welcomeIllustration {
 				margin: 50px 0 30px 0;
+                
+                @media(max-width:800px){
+                    margin: 20px 0 20px 0;
+                }
 			}
 
 			p {
@@ -72,6 +85,10 @@ body {
    		 		margin: 0 auto;
 				color: $secondary-color;
 				font-weight: $font-600;
+                
+                @media(max-width:800px){
+                    max-width: 100%;
+                }
 			}
 		}
 	}
@@ -86,11 +103,19 @@ body {
 		box-shadow: $box-shadow-content;
 		border-radius: $border-radius-content;
         
+        @media(max-width:800px){
+            flex-flow: column wrap;
+        }
+        
         .content-left{
             flex: 28;
             padding: 0px 40px 40px 40px;
             display: flex;
             flex-flow: column wrap;
+            
+            @media(max-width:800px){
+                padding: 40px 25px;
+            }
             
             .title-image-position{
                 display: flex;
@@ -216,6 +241,15 @@ body {
             padding: 40px 35px;
             position: relative;
             
+            @media(max-width:800px){
+                order: -1;
+                padding: 40px 25px;
+                border-left: none;
+                border-bottom: $border-content;
+                background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(146,79,255,1) 250%) no-repeat;
+                justify-content: flex-start;
+            }
+            
             p {
                 font-size: $content-right-font-size;
                 color: $secondary-color;
@@ -236,6 +270,10 @@ body {
                 font-style: normal;
                 width: 100%;
                 padding: 0 10px;
+                @media(max-width:800px){
+                    position:static;
+                    margin-top: 40px;
+                }
                 
                 &.error-message-style {
                     color: $orange;
@@ -278,11 +316,21 @@ body {
     	    padding-top: 20px;
     	    padding-bottom: 20px;
             box-shadow: 1px 0px 7px 0px rgba(145,160,171,0.2);
+            
+            @media ( max-width: 800px){
+                padding-top: 30px;
+            }
 
     	    .cookie-wrapper {
     	    	display: flex;
     	    	align-items: center;
-                max-width: 860px;
+                max-width: 70%;
+                
+                @media (max-width: 800px){
+                    max-width: 100%;
+                    flex-flow: column wrap;
+                    justify-content: center;
+                }
 
     	    	img {
     	    		margin-right: 20px;
@@ -302,11 +350,18 @@ body {
 
     		    label.close-cookie {
     		    	position: absolute;
-    		    	top: 20px;
-    		    	right: 20px;
+    		    	top: 10px;
+    		    	right: 0px;
                     cursor: pointer;
     		    }
+                
+                .cookie-box{
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 20px;
+                }
     	    }
     	}
     }
 }
+

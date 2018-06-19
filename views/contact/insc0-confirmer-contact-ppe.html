@@ -10,77 +10,89 @@
 </head>
 
 <body>
-    <section class="content-aside wrapper">
-        <div class="content-left">
-            <div>
-                <div class="border-h2">
-                    <h2>Tout d'abord, je vérifie mon contact !</h2>
+    <section class="container-fluid">
+        <div class="content-aside wrapper">
+            <form class="content-left">
+                <div>
+                    <div class="border-h2">
+                        <h2>Tout d'abord, je vérifie mon contact !</h2>
+                    </div>
+                    <div class="item-border">
+                        <p class="texte12-20">Nous avons identifié David Doe comme étant une personne politiquement exposée. Nous le confirmez-vous ? <input id="cb1" class="tgl tgl-light" type="checkbox">
+                            <label class="tgl-btn" for="cb1" data-check-oui="../../img/check.svg)">
+                            </label>
+                        </p>
+                    </div>
                 </div>
-                <div class="item-border">
-                    <p class="texte12-20">Nous avons identifié David Doe comme étant une personne politiquement exposée. Nous le confirmez-vous ? <input id="cb1" class="tgl tgl-light" type="checkbox">
-                    <label class="tgl-btn" for="cb1">
-                        <div class="tgl-rond">
-                        </div>
-                        
-                    </label></p>
-
-                </div>
-            </div>
                 
             
-            <form class="form-position">
-                <div class="item">
-                    <label for="televerser">
-                        <h3>ENVOYEZ-NOUS LE JUSTIFICATIF D’IDENTITÉ DU REPRÉSENTANT LÉGAL</h3>
-                        <div class="televerser">
-                        <p>Glissez/déposez un document ici 
-                        <br/>ou
-                        </p>
-                        <div class="icon-televerser">
-                            <img src="../../assets/img/envoyer-icon.svg">
-                            <span>Télécharger</span>
-                        </div>
-                        </div>
-                        <input id="televerser" name="televerser" type="file" accept=".pdf" multiple>
-                    </label>
-                    <p class="error-message">Format de fichier non valide</p>
-                </div>
-                <div>
-                    <button type="submit" class="button-default">
+                <div class="form-position">
+                    <div class="item">
+                        <label for="televerser">
+                            <div class="titre-tooltip">
+                                <h3>ENVOYEZ-NOUS LE JUSTIFICATIF D’IDENTITÉ DU REPRÉSENTANT LÉGAL</h3>
+                                <div class="special-text">
+                                    <img src="../../assets/img/Info-Icon.svg">
+                                    <span class="special-text__tooltip">
+                                    Dans le cadre de la signature et de l’exécution du présent contrat, et plus généralement de notre relation, S-money recueille et traite des données à caractère personnel vous concernant et concernant les personnes physiques intervenant dans le cadre de cette relation (mandataire, représentant légal, contact désigné, bénéficiaire effectif, ...). Les informations vous expliquant pourquoi et comment ces données sont utilisées, combien de temps elles seront conservées ainsi que les droits dont vous disposez sur vos données figurent dans notre notice d’information sur le traitement des données à caractère personnel.
+                                    Cette notice est portée à votre connaissance lors de la première collecte de vos données. Vous pouvez y accéder à tout moment, sur notre site internet en <a href="">cliquant ici</a>. S-money communiquera en temps utile les évolutions apportées à ces informations.
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="televerser">
+                                <p>Glissez/déposez un document ici 
+                                <br/>ou
+                                </p>
+                                <div class="icon-televerser">
+                                    <img src="../../assets/img/envoyer-icon.svg">
+                                    <span>Télécharger</span>
+                                    <input id="televerser" name="televerser" type="file"  multiple>
+                                </div>
+                            </div>
+                        </label>
+                        <p class="error-message">Format de fichier non valide</p>
+                    </div>
+                    <div>
+                        <button type="submit" class="button-default">
                         Je confirme
-                    </button>
+                        </button>
+                    </div>
                 </div>
             </form>
-        </div>
           
-        <div class="content-right">
-            <img src="../../assets/img/contact-icon.svg">
-            <p>Pour nous aider à confirmer l’identité du représentant légal, veillez à nous faire parvenir des pièces d’identités recto/verso lisibles, non tronquées et non surchargées.</p>
-            <p class="content-right-plus">Qu’est-ce qu’une personne politiquement exposée ? <a href="">Cliquez ici</a></p>
+            <div class="content-right">
+                <img src="../../assets/img/contact-icon.svg">
+                <p>Pour nous aider à confirmer l’identité du représentant légal, veillez à nous faire parvenir des pièces d’identités recto/verso lisibles, non tronquées et non surchargées.</p>
+                <p class="content-right-plus">Qu’est-ce qu’une personne politiquement exposée ? <a href="">Cliquez ici</a></p>
+            </div>
         </div>
     </section>
     
     <footer>
-        <div class="content-wrapper container-fluid">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-xs-12">
                     <div class="content-footer">
-                        <a href="http://www.s-money.fr/" target="_blank">
-                            <img src="../../assets/img/footer/logo-s-money.png"class="logo-s-money" alt="">
-                        </a>
-                        <p>filiale de</p>
-                        <a href="https://www.natixis.com/natixis/jcms" target="_blank">
-                            <img src="../../assets/img/footer/logo-natixis.png" class="logo-natixis" alt="Natixis">
-                        </a>
-                        <a href="#" class="link-footer" title="Mentions Légales">Mentions Légales</a>
-                        <a href="#" class="link-footer" title="Mentions Légales">Déconnexion</a>
+                        <div class="content-footer-1">
+                            <a href="http://www.s-money.fr/" target="_blank">
+                                <img src="../../assets/img/footer/logo-s-money.png"class="logo-s-money" alt="S-Money">
+                            </a>
+                            <p>filiale de</p>
+                            <a href="https://www.natixis.com/natixis/jcms" target="_blank">
+                                <img src="../../assets/img/footer/logo-natixis.png" class="logo-natixis" alt="Natixis">
+                            </a>
+                        </div>
+                        <div class="content-footer-2">
+                            <a href="#" class="link-footer link-footer-mobile" title="Mentions Légales">Mentions Légales</a>
+                            <a href="#" class="link-footer deconnexion" title="Déconnexion">Déconnexion</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="assets/js/index.js"></script>
+    <script src="../../assets/js/index.js"></script>
 </body>
 
 </html>
