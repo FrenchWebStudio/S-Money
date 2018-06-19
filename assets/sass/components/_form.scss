@@ -144,12 +144,13 @@ input[type="tel"] {
         margin-right: 40px;
 
     		&:after {
+                content: "";
     			position: absolute;
     			display: block;
-    			content: url(../../img/check.svg) ;
     			width: 19px;
     			height: 19px;
                 top: -2px;
+                background: #fff;
                 border: $border-color-tooltip;
                 box-shadow: $box-shadow-form;
     		}
@@ -171,7 +172,8 @@ input[type="tel"] {
   
 	&:checked + .tgl-btn:after {
 		left: 50%;
-        content: url(../../img/check.svg);
+        content: "";
+        background: #fff url("../../assets/img/check.svg") no-repeat 50%
 	}
         
     &:checked + .tgl-btn:before {

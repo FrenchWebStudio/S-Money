@@ -185,12 +185,13 @@ input[type="tel"] {
             user-select: none;
     margin-right: 40px; }
     .content-aside .content-left .tgl + label.tgl-btn:after {
+      content: "";
       position: absolute;
       display: block;
-      content: url(../../img/check.svg);
       width: 19px;
       height: 19px;
       top: -2px;
+      background: #fff;
       border: rgba(145, 160, 171, 0.35);
       -webkit-box-shadow: 1px 0px 9px 0px rgba(145, 160, 171, 0.35);
               box-shadow: 1px 0px 9px 0px rgba(145, 160, 171, 0.35); }
@@ -208,7 +209,8 @@ input[type="tel"] {
               transform: translateY(-3px); }
   .content-aside .content-left .tgl:checked + .tgl-btn:after {
     left: 50%;
-    content: url(../../img/check.svg); }
+    content: "";
+    background: #fff url("../../assets/img/check.svg") no-repeat 50%; }
   .content-aside .content-left .tgl:checked + .tgl-btn:before {
     content: "Oui";
     font-weight: 500;
