@@ -270,6 +270,8 @@ body {
                 font-style: normal;
                 width: 100%;
                 padding: 0 10px;
+                left: 0;
+                
                 @media(max-width:800px){
                     position:static;
                     margin-top: 40px;

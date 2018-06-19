@@ -2509,7 +2509,8 @@ body {
         bottom: 40px;
         font-style: normal;
         width: 100%;
-        padding: 0 10px; }
+        padding: 0 10px;
+        left: 0; }
         @media (max-width: 800px) {
           body .content-aside .content-right .content-right-plus {
             position: static;
