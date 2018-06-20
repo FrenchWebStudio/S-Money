@@ -42,11 +42,11 @@
                                 <div class="icon-televerser">
                                     <img src="../../assets/img/envoyer-icon.svg">
                                     <span>Télécharger</span>
-                                    <input id="televerser" name="televerser" type="file"  multiple>
+                                    <input id="televerser" name="televerser" type="file"  multiple onchange="return fileValidation()">
                                 </div>
                             </div>
                         </label>
-                        <p class="error-message">Format de fichier non valide</p>
+                        <p class="error-message error-message-style" id="error-message">Format de fichier non valide</p>
                     </div>
                     <div>
                         <button type="submit" class="button-default">
@@ -87,7 +87,7 @@
         </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="assets/js/index.js"></script>
+    <script src="../../assets/js/index.js"></script>
 </body>
 
 </html>

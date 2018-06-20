@@ -1,0 +1,48 @@
+header{
+    margin-bottom: 90px;
+    
+    .etapes {
+        display: flex;
+        flex-flow: row wrap;
+
+        .etape-box{
+            position: relative;
+            flex:1;
+            height: 137px;
+            border-bottom: $border-content;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+
+            &.etape-en-cours{
+                border-bottom: 3px solid $primary-color;
+            }
+
+            &:before{
+                position: absolute;
+                display: block;
+                content: "";
+                width: 0.5px;
+                height: 100%;
+                background: $background-header;
+                left: 0px;
+            }
+
+            &:after{
+                position: absolute;
+                display: block;
+                content: "";
+                width: 0.5px;
+                height: 100%;
+                background: $background-header;
+                right: 0px;
+            }
+
+            p{
+                color: $secondary-color;
+            }
+        }
+    }
+}	

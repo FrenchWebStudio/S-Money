@@ -27,6 +27,7 @@
     $green: #3FBB92;
     $grey-white: #FDFDFD;
     $orange: #FF8F2D;
+    $header-color: rgba(145,160,171,0.35);
 
 // Typography
 
@@ -45,6 +46,7 @@
 	$heading-1-font-size: 26px;
 	$heading-2-font-size: 18px;
     $heading-3-font-size: 10px;
+    $heading-header: 15px;
 
 	// Font Weights
 	$font-300: 300;
@@ -85,6 +87,10 @@
 
 
 // Links
+
+// Backgrounds
+
+    $background-header: linear-gradient(to bottom, rgba(196,206,213,0) -50%, rgba(145,160,171,0.35) 100%) no-repeat;
 
 // Sections
 

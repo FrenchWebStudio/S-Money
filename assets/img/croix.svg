@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="8px" height="8px" viewBox="0 0 8 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Croix</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
+        <g id="INSC2-Adresse/Incorrecte" transform="translate(-486.000000, -411.000000)" stroke="#5D5062" stroke-width="1.2">
+            <g id="Card" transform="translate(232.000000, 227.000000)">
+                <g id="Switch-Oui" transform="translate(248.000000, 178.000000)">
+                    <g id="switch">
+                        <g id="Croix" transform="translate(7.000000, 7.000000)">
+                            <path d="M0,0 L6,6" id="Stroke-1"></path>
+                            <path d="M6,0 L0,6" id="Stroke-3"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
