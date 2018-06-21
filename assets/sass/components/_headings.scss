@@ -1,11 +1,11 @@
 // Headings
 
-h1, h2{
+h1, h2 {
 	font-family: $font-family;
 	letter-spacing: 1px;
 }
 
-h3, h4, h5, h6{
+h3, h4, h5, h6 {
     font-family: $font-family;
 	letter-spacing: 0.5px;
 }
@@ -15,7 +15,7 @@ h1 {
 	line-height: $line-height-30;
 	font-weight: $font-700;
     
-    &.heading-etape{
+    &.heading-step {
         font-size: $heading-header;
         line-height: $line-height-18;
     }

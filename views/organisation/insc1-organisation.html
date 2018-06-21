@@ -11,28 +11,28 @@
 
 <body class="body-header">
     <header>
-        <ul class="etapes">
-            <li class="etape-box etape-en-cours">
-                <h1 class="heading-etape">Mon organisation
+        <ul class="steps">
+            <li class="step-box step-in-progress">
+                <h1 class="heading-step">Mon organisation
                 </h1>
             </li>
-            <li class="etape-box">
+            <li class="step-box">
                 <p>Mon adresse
                 </p>
             </li>
-            <li class="etape-box">
+            <li class="step-box">
                 <p>Mes représentants et mandataires
                 </p>
             </li>
-            <li class="etape-box">
+            <li class="step-box">
                 <p>Mes bénéficiaires effectifs
                 </p>
             </li>
-            <li class="etape-box">
+            <li class="step-box">
                 <p>Mes informations bancaires
                 </p>
             </li>
-            <li class="etape-box">
+            <li class="step-box">
                 <p>Conditions générales d’utilisation
                 </p>
             </li>
@@ -46,28 +46,14 @@
                 <form class="form-position">
                     <div>
                         <div class="sous-item">
-                            <div class="select animated zoomIn">
-                                <!-- You can toggle select (disabled) -->
-                                <input type="radio" name="option">
-                                <i class="toggle icon icon-arrow-down"></i>
-                                <i class="toggle icon icon-arrow-up"></i>
-                                <span class="placeholder">Choose...</span>
-                                <label class="option">
-                                    <input type="radio" name="option">
-                                    <span class="title animated fadeIn"><i class="icon icon-speedometer"></i>Speedometer</span>
-                                </label>
-                                <label class="option">
-                                    <input type="radio" name="option">
-                                    <span class="title animated fadeIn"><i class="icon icon-fire"></i>Fire</span>
-                                </label>
-                                <label class="option">
-                                    <input type="radio" name="option" disabled>
-                                    <span class="title animated fadeIn"><i class="icon icon-handbag"></i>Handbag</span>
-                                </label>
-                                <label class="option">
-                                    <input type="radio" name="option">
-                                    <span class="title animated fadeIn"><i class="icon icon-badge"></i>Badge</span>
-                                </label>
+                            <div class="custom-select">
+                                <label for=""><h3>Vous êtes ?</h3></label>
+                                <select>
+                                    <option value="0">Société </option>
+                                    <option value="1">Entreprise individuelle</option>
+                                    <option value="2">Particulier</option>
+                                    <option value="3">Association</option>
+                                </select>
                             </div>
                         </div>
                         <div class="sous-item">

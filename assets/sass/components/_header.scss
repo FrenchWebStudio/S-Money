@@ -1,11 +1,11 @@
-header{
+header {
     margin-bottom: 90px;
     
-    .etapes {
+    .steps {
         display: flex;
         flex-flow: row wrap;
 
-        .etape-box{
+        .step-box {
             position: relative;
             flex:1;
             height: 137px;
@@ -16,11 +16,11 @@ header{
             justify-content: center;
             padding: 10px;
 
-            &.etape-en-cours{
+            &.step-in-progress{
                 border-bottom: 3px solid $primary-color;
             }
 
-            &:before{
+            &:before {
                 position: absolute;
                 display: block;
                 content: "";
@@ -30,7 +30,7 @@ header{
                 left: 0px;
             }
 
-            &:after{
+            &:after {
                 position: absolute;
                 display: block;
                 content: "";
@@ -40,8 +40,9 @@ header{
                 right: 0px;
             }
 
-            p{
+            p {
                 color: $secondary-color;
+                margin-bottom: 0;
             }
         }
     }

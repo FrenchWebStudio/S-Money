@@ -1,9 +1,15 @@
-input, select{
+.form-position {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    flex: auto;
+}
+
+input, select {
+    font-size: $form-font-size;
     font-family: $font-family;
     background-color: $grey-white;
     -webkit-appearance: inherit;
-    
-    
 }
 
 input:focus, label:focus, select:focus, label:focus {
@@ -19,85 +25,98 @@ input[type="text"], select {
     padding-left: 10px;
     color: $secondary-color;
     
-    &::placeholder{
+    &::placeholder {
         color: $secondary-color;
     }
 }
 
-select{
-    option{
+/* Select */
+
+select {
+    option {
+        font-size: $form-font-size;
         -webkit-appearance: inherit;
         background-color: white;
     }
 }
 
-
-
-    .custom-dropdown {
-        position: relative;
-        display: inline-block;
-        vertical-align: middle;
-    }
-
-    .custom-dropdown__select {
-        padding-right: 2.5em; /* accommodate with the pseudo elements for the dropdown arrow */
-        border: 0;
-        border-radius: 3px;
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        appearance: none;    
-    }
-
-    .custom-dropdown::before,
-    .custom-dropdown::after {
-        content: "";
-        position: absolute;
-        pointer-events: none;
-    }
-
-    .custom-dropdown::after { /*  Custom dropdown arrow */
-        content: "\25BC";
-        height: 1em;
-        font-size: .625em;
-        line-height: 1;
-        right: 1.2em;
-        top: 50%; margin-top: -.5em;
-    }
-
-    .custom-dropdown::before { /*  Custom dropdown arrow cover */
-        width: 2em;
-        right: 0; top: 0; bottom: 0;
-        border-radius: 0 3px 3px 0;
-    }
-
-    .custom-dropdown__select[disabled] {
-        color: rgba(0,0,0,.3);
-    }
-
-    .custom-dropdown.custom-dropdown--disabled::after {
-        color: rgba(0,0,0,.1);
-    }
-
-    /* White dropdown style */
-    .custom-dropdown--white::before {
-        top: .5em; bottom: .5em;
-        background-color: #fff;
-        border-left: 1px solid rgba(0,0,0,.1);
-    }
-
-    .custom-dropdown--white::after {
-        color: rgba(0,0,0,.9);
-    }
-
-
-.form-position {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: space-between;
-    flex: auto;
+.custom-select {
+    width: 100%;
+    position: relative;
 }
 
-#televerser{
+.custom-select select {
+  display: none;
+}
+
+.select-selected {
+  background-color: $white;
+}
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  right: 20px;
+  width: 12px;
+  height: 20px;
+  transform: translateY(-50%);
+  background: url("../../assets/img/arrow-down-select.svg") no-repeat 50%;
+  background-size: 100%;
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div, .select-selected {
+    position: relative;
+    width: 100%;
+    height: 35px;
+    border-radius: 2px;
+    border:1px solid $grey-light;
+    padding-left: 10px;
+    color: $secondary-color;
+    font-size: $form-font-size;
+    line-height: 35px;
+    cursor: pointer;
+    
+    &::placeholder {
+        color: $secondary-color;
+    }
+}
+
+.select-items div {
+    border-radius: 0;
+
+    &:last-child {
+        border-bottom-left-radius: 2px;
+        border-bottom-right-radius: 2px;
+    }
+}
+
+/*style items (options):*/
+.select-items {
+  position: absolute;
+  background-color: $white;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* *********** */
+/* Drag & Drop */
+/* *********** */
+
+#televerser {
     position: absolute;
     min-width: 462px;
     height: 85px;
@@ -107,22 +126,22 @@ select{
     left: 0;
     top: 0;
     
-    @media(max-width:$breakpoint-mobile){
+    @media(max-width:$breakpoint-mobile) {
         display: block;
         min-width: 100%;
     }
     
-    &:invalid{
+    &:invalid {
         opacity: 1;
         background-color: red;
     }
     
-    &:invalid ~ .error-message{
+    &:invalid ~ .error-message {
         display: block;
     }
 }
 
-label[for="televerser"]{
+label[for="televerser"] {
     cursor: pointer;
     position: relative;
     width: 100%;
@@ -170,6 +189,9 @@ input[type="tel"] {
     }
 }
 
+/* *********** */
+/*    Toggle   */
+/* *********** */
 .content-aside .content-left .tgl {
 	display: none;
   
@@ -259,7 +281,7 @@ input[type="tel"] {
 	}
 }
 
-#code-submit:invalid{
+#code-submit:invalid {
     ~ .error-message{
         display: block;
     }
