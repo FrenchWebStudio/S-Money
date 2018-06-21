@@ -51,6 +51,7 @@ button {
 	border-radius: $button-border-radius;
 	-webkit-font-smoothing: antialiased;
 	cursor: pointer;
+    line-height: $line-height-16;
     
     &.position-content{
         margin-top: $button-margin-top;

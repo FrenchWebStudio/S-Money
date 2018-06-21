@@ -33,6 +33,11 @@ input[type="text"], select {
         -o-transition: all 0.2s ease;
         transition: all 0.2s ease;
     }
+    
+    &.italic-placeholder::placeholder {
+        font-style: italic;
+        font-weight: $font-300;
+    }
 }
 
 input {

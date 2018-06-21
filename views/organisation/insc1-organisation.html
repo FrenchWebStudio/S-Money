@@ -13,7 +13,7 @@
     <header>
         <ul class="steps">
             <li class="step-box step-in-progress">
-                <a href="#" class="nav-link-step">Mon organisation</a>
+                <a href="#" class="nav-link-step"><h1 class="nav-link-step">Mon organisation</h1></a>
             </li>
             <li class="step-box">
                 <a href="#">Mon adresse</a>
@@ -38,15 +38,15 @@
             <div class="content-left padding-top-content">
                 
                 <form class="form-position">
-                    <div>
+                    <div class="item">
                         <div class="sous-item">
                             <div class="custom-select select-organization-type">
                                 <label for="select-organization-type"><h3>Vous êtes ?</h3></label>
                                 <select id="select-organization-type">
-                                    <option value="0">Société</option>
-                                    <option value="1">Entreprise individuelle</option>
-                                    <option value="2">Particulier</option>
-                                    <option value="3">Association</option>
+                                    <option value="societe">Société</option>
+                                    <option value="entreprise-individuelle">Entreprise individuelle</option>
+                                    <option value="particulier">Particulier</option>
+                                    <option value="association">Association</option>
                                 </select>
                             </div>
                         </div>
@@ -113,12 +113,45 @@
                             <input id="date-immatriculation" name="date-immatriculation" type="text" placeholder="JJ/MM/AAAA">
                         </div>
                         <div class="sous-item">
-                            <label for="mail"><h3>Cet email est-il bien votre email de contact ?</h3></label>
-                            <input id="mail" name="mail" type="text" placeholder="loisirs@handiski.fr">
+                            <label for="forme-jurique"><h3>Forme juridique</h3></label>
+                            <input id="forme-juridique" name="forme-juridique" type="text" placeholder="SARL">
                         </div>
                         <div class="sous-item">
-                            <label for="mail"><h3>Cet email est-il bien votre email de contact ?</h3></label>
-                            <input id="mail" name="mail" type="text" placeholder="loisirs@handiski.fr">
+                            <label for="raison-sociale"><h3>Raison sociale</h3></label>
+                            <input id="raison-sociale" name="raison sociale" type="text" placeholder="Handi Ski">
+                        </div>
+                        <div class="sous-item">
+                            <label for="code-naf"><h3>Code NAF</h3></label>
+                            <input id="code-naf" name="code-naf" type="text" placeholder="96.04Z">
+                        </div>
+                        <div class="sous-item">
+                            <label for="code-naf" class="titre-tooltip">
+                                <h3>Objectif C.A période en cours H.T</h3>
+                                <div class="special-text">
+                                <img src="../../assets/img/Info-Icon.svg">
+                                <span class="special-text__tooltip">
+                                Cette informatiion est requise dans un souci de connaissance du client et de la relation d'affaires afin d'évaluer les risques de blanchiment de capitaux et de financement du terrorisme.
+                                </span>
+                            </div>
+                            </label>
+                            
+                            <input id="code-naf" name="code-naf" type="text" placeholder="Saisissez votre chiffre..." class="italic-placeholder">
+                        </div>
+                        <div class="sous-item">
+                            <label for="code-naf" class="titre-tooltip">
+                                <div>
+                                    <h3>C.A Exercice précédent H.T</h3>
+                                    <span class="optional-input"> - Facultatif</span>
+                                </div>
+                                <div class="special-text">
+                                <img src="../../assets/img/Info-Icon.svg">
+                                <span class="special-text__tooltip">
+                                Cette informatiion est requise dans un souci de connaissance du client et de la relation d'affaires afin d'évaluer les risques de blanchiment de capitaux et de financement du terrorisme.
+                                </span>
+                            </div>
+                            </label>
+                            
+                            <input id="code-naf" name="code-naf" type="text" placeholder="Saisissez votre chiffre..." class="italic-placeholder">
                         </div>
                     </div>
                     <div>
@@ -132,8 +165,22 @@
             </div>
           
             <div class="content-right">
-                <img src="../../assets/img/contact-icon.svg">
-                <p>Cette adresse sera vérifiée et utilisée dans le cadre des échanges liés au service S-Money. Elle ne sera pas utilisée à des fins commerciales. Veillez à renseigner une adresse que vous consultez régulièrement.</p>
+                <img src="../../assets/img/document-icon.svg">
+                <p>Complétez les informations caractéristiques de votre organisation. Les informations fournies ne seront transmises à aucun acteur tiers, et uniquement utilisées pour assurer la bonne gestion de vos encaissements.</p>
+            </div>
+        </div>
+    </section>
+    <section class="pop-up-bloc">
+        <input id="close-cookie" name="close-cookie" type="checkbox">
+        <input id="accept-cookie" name="accept-cookie" type="checkbox">
+        
+        <div class="pop-up-background">
+            <div class="pop-up-box">
+                <p>Dans le cadre de la signature et de l’exécution du présent contrat, et plus généralement de notre relation, S-money recueille et traite des données à caractère personnel vous concernant et concernant les personnes physiques intervenant dans le cadre de cette relation (mandataire, représentant légal, contact désigné, bénéficiaire effectif, ...). Les informations vous expliquant pourquoi et comment ces données sont utilisées, combien de temps elles seront conservées ainsi que les droits dont vous disposez sur vos données figurent dans notre notice d’information sur le traitement des données à caractère personnel. Cette notice est portée à votre connaissance lors de la première collecte de vos données. Vous pouvez y accéder à tout moment, sur notre site internet en <a href="" class="link-pop-up">cliquant ici</a>. S-money communiquera en temps utile les évolutions apportées à ces informations.</p>
+                <label for="accept-cookie" class="button-inline">C'est compris</label>
+                <label for="close-cookie" class="close-cookie">
+                    <img src="../../assets/img/cookie-bloc/close-icon.svg" class="close-cookie-img" alt="Close">
+                </label>
             </div>
         </div>
     </section>

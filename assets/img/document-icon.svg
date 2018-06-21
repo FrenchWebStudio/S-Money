@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="23px" height="36px" viewBox="0 0 23 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>document-icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="INSC1-Organisation" transform="translate(-872.000000, -487.000000)" fill="#FFFFFF" stroke="#2A006B">
+            <g id="Card" transform="translate(232.000000, 227.000000)">
+                <g id="Expliquations" transform="translate(533.000000, 0.000000)">
+                    <g id="document-icon" transform="translate(108.000000, 261.000000)">
+                        <path d="M19.4193976,34 L1.58060235,34 C0.708114403,34 0,33.2429265 0,32.308823 L0,1.69060773 C0,0.757073497 0.708114403,0 1.58060235,0 L14.057635,0 L21,8.03294827 L21,32.308823 C21,33.2429265 20.2924544,34 19.4193976,34 Z" id="Stroke-3"></path>
+                        <polyline id="Stroke-5" points="13 1 13 8 20 8"></polyline>
+                        <path d="M5,20 L16,20" id="Stroke-13"></path>
+                        <path d="M5,15 L16,15" id="Stroke-9"></path>
+                        <path d="M5,26 L16,26" id="Stroke-17"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

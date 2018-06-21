@@ -15,9 +15,19 @@ header {
             align-items: center;
             justify-content: center;
             padding: 10px;
+            
+            &.validate-step img{
+                position: absolute;
+                top: 20px;
+            }
 
             &.step-in-progress {
                 border-bottom: 3px solid $primary-color;
+                
+                h1.nav-link-step{
+                    font-size: $heading-header;
+                    color: $primary-color;
+                }
             }
 
             &:not(.step-in-progress) {
