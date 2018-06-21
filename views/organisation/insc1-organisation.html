@@ -13,28 +13,22 @@
     <header>
         <ul class="steps">
             <li class="step-box step-in-progress">
-                <h1 class="heading-step">Mon organisation
-                </h1>
+                <a href="#" class="nav-link-step">Mon organisation</a>
             </li>
             <li class="step-box">
-                <p>Mon adresse
-                </p>
+                <a href="#">Mon adresse</a>
             </li>
             <li class="step-box">
-                <p>Mes représentants et mandataires
-                </p>
+                <a href="#">Mes représentants et mandataires</a>
             </li>
             <li class="step-box">
-                <p>Mes bénéficiaires effectifs
-                </p>
+                <a href="#">Mes bénéficiaires effectifs</a>
             </li>
             <li class="step-box">
-                <p>Mes informations bancaires
-                </p>
+                <a href="#">Mes informations bancaires</a>
             </li>
             <li class="step-box">
-                <p>Conditions générales d’utilisation
-                </p>
+                <a href="#">Conditions générales d’utilisation</a>
             </li>
         </ul>
     </header>
@@ -46,15 +40,77 @@
                 <form class="form-position">
                     <div>
                         <div class="sous-item">
-                            <div class="custom-select">
-                                <label for=""><h3>Vous êtes ?</h3></label>
-                                <select>
-                                    <option value="0">Société </option>
+                            <div class="custom-select select-organization-type">
+                                <label for="select-organization-type"><h3>Vous êtes ?</h3></label>
+                                <select id="select-organization-type">
+                                    <option value="0">Société</option>
                                     <option value="1">Entreprise individuelle</option>
                                     <option value="2">Particulier</option>
                                     <option value="3">Association</option>
                                 </select>
                             </div>
+                        </div>
+                        <div class="sous-item">
+                            <div class="custom-select select-country">
+                                <label for="select-country"><h3>Pays d'immatriculation</h3></label>
+                                <select id="select-country">
+                                    <option value="AL">Allemagne</option>
+                                    <option value="AU">Australie</option>
+                                    <option value="AT">Autriche</option>
+                                    <option value="BE">Belgique</option>
+                                    <option value="BG">Bulgarie</option>
+                                    <option value="CA">Canada</option>
+                                    <option value="CH">Chypre (pays)</option>
+                                    <option value="HR">Croatie</option>
+                                    <option value="DK">Danemark</option>
+                                    <option value="ES">Espagne</option>
+                                    <option value="EE">Estonie</option>
+                                    <option value="US">États-Unis</option>
+                                    <option value="FI">Finlande</option>
+                                    <option value="FR" selected>France</option>
+                                    <option value="GR">Grèce</option>
+                                    <option value="GP">Guadeloupe</option>
+                                    <option value="GY">Guyane</option>
+                                    <option value="HU">Hongrie</option>
+                                    <option value="IE">Irlande</option>
+                                    <option value="IS">Islande</option>
+                                    <option value="IT">Italie</option>
+                                    <option value="JP">Japon</option>
+                                    <option value="LR">La Réunion</option>
+                                    <option value="LE">Lettonie</option>
+                                    <option value="LT">Lituanie</option>
+                                    <option value="LU">Luxemboug</option>
+                                    <option value="MT">Malte</option>
+                                    <option value="MQ">Martinique</option>
+                                    <option value="YT">Mayotte</option>
+                                    <option value="MC">Monaco</option>
+                                    <option value="NO">Norvège</option>
+                                    <option value="NC">Nouvelle-Calédonie</option>
+                                    <option value="NL">Pays-Bas</option>
+                                    <option value="PL">Pologne</option>
+                                    <option value="PF">Polynésie Française</option>
+                                    <option value="PT">Portugal</option>
+                                    <option value="CZ">République tchèque</option>
+                                    <option value="RO">Roumanie</option>
+                                    <option value="UK">Royaume-Uni</option>
+                                    <option value="SB">Saint-Barthélemy</option>
+                                    <option value="SM">Saint-Martin (partie française)</option>
+                                    <option value="SG">Singapour</option>
+                                    <option value="SK">Slovaquie</option>
+                                    <option value="SI">Slovénie</option>
+                                    <option value="SP">Saint Pierre et Miquelon</option>
+                                    <option value="SE">Suède</option>
+                                    <option value="WF">Wallis et Futuna</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="sous-item">
+                            <label for="siret"><h3>Siret</h3></label>
+                            <input id="siret" name="siret" type="text" placeholder="362 521 879 00034">
+                        </div>
+                        <div class="sous-item">
+                            <label for="date-immatriculation"><h3>Date d'immatriculation</h3></label>
+                            <input id="date-immatriculation" name="date-immatriculation" type="text" placeholder="JJ/MM/AAAA">
                         </div>
                         <div class="sous-item">
                             <label for="mail"><h3>Cet email est-il bien votre email de contact ?</h3></label>
@@ -98,7 +154,7 @@
                         </div>
                         <div class="content-footer-2">
                             <a href="#" class="link-footer link-footer-mobile" title="Mentions Légales">Mentions Légales</a>
-                            <a href="#" class="link-footer deconnexion" title="Déconnexion">Déconnexion</a>
+                            <a href="#" class="link-footer log-out" title="Déconnexion">Déconnexion</a>
                         </div>
                     </div>
                 </div>

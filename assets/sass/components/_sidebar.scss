@@ -1,1 +1,57 @@
 // Sidebar
+
+.content-right {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    flex: 10;
+    background: linear-gradient(to top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(146,79,255,1) 250%) no-repeat;
+    border-left: $border-content;
+    padding: 40px 35px;
+    position: relative;
+    
+    @media(max-width:$breakpoint-mobile) {
+        order: -1;
+        padding: 40px 25px;
+        border-left: none;
+        border-bottom: $border-content;
+        background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(146,79,255,1) 250%) no-repeat;
+        justify-content: flex-start;
+    }
+    
+    p {
+        font-size: $content-right-font-size;
+        color: $secondary-color;
+        font-style: italic;
+        font-weight: $font-600;
+        text-align: center;
+        line-height: $line-height-14;
+    }
+    
+    img {
+        margin-bottom: 12px;
+    }
+    
+    .content-right-plus {
+        font-size: 11px;
+        position: absolute;
+        bottom: 40px;
+        font-style: normal;
+        width: 100%;
+        padding: 0 10px;
+        left: 0;
+        
+        @media(max-width:$breakpoint-mobile) {
+            position:static;
+            margin-top: 40px;
+        }
+        
+        &.error-message-style {
+            color: $orange;
+            font-size: 11px;
+            font-weight: 500;
+            line-height: $line-height-12;
+        }
+    }
+}

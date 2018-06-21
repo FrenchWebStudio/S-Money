@@ -1,3 +1,15 @@
+// Links
+    
+a {
+    color: $secondary-color;
+    text-decoration: none;
+
+    &.nav-link-step {
+        font-size: $heading-header;
+        line-height: $line-height-18;
+    }
+}
+
 .link-default {
 	font-size: 14px;
 	font-weight: $font-700;

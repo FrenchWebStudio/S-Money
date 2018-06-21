@@ -1,0 +1,202 @@
+//Content
+
+.content {
+	position: relative;
+	max-width: 780px;
+    min-height: 420px;
+	background: $white;
+	border: $border-content;
+	box-shadow: $box-shadow-content;
+	padding: 50px;
+	border-radius: $border-radius-content;
+    
+    @media(max-width:$breakpoint-mobile) {
+        padding: 40px 25px;
+    }
+
+	.home-wrapper {
+		h2 {
+			margin-top: 10px;
+		}
+
+		img.welcomeIllustration {
+			margin: 50px 0 30px 0;
+            
+            @media(max-width:$breakpoint-mobile) {
+                margin: 20px 0 20px 0;
+            }
+		}
+
+		p {
+			max-width: 60%;
+		 		margin: 0 auto;
+			color: $secondary-color;
+			font-weight: $font-600;
+            
+            @media(max-width:$breakpoint-mobile) {
+                max-width: 100%;
+            }
+		}
+	}
+}
+
+.content-aside {
+    display: flex;
+    position: relative;
+	max-width: 780px;
+    min-height: 420px;
+	background: $white;
+	border: $border-content;
+	box-shadow: $box-shadow-content;
+	border-radius: $border-radius-content;
+    
+    @media(max-width:$breakpoint-mobile) {
+        flex-flow: column wrap;
+    }
+    
+    .content-left {
+        flex: 28;
+        padding: 0px 40px 40px 40px;
+        display: flex;
+        flex-flow: column wrap;
+        
+        &.padding-top-content{
+            padding: 40px;
+        }
+        
+        @media(max-width:$breakpoint-mobile) {
+            padding: 40px 25px;
+        }
+        
+        .title-image-position {
+            display: flex;
+            align-items: flex-start;
+            
+            img{
+                margin-right: 20px;
+                margin-top: 5px;
+            }
+        }
+        
+        h2.validation-h2 {
+            color: $green;
+        }
+        
+        h2.erreur-h2 {
+            color: $orange;
+        }
+        
+        .border-h2 {
+            padding: 20px 0px;
+            border-bottom: $border-content-titre;  
+        }
+        
+        .subtitle-h2 {
+            font-size: 11px;
+            line-height: 14px;
+            color: $primary-color;
+        }
+        
+        p {
+            font-size: $content-left-font-size;
+            color: $secondary-color;
+            line-height: $line-height-12;
+        }
+        
+        p.texte12-20 {
+            line-height: $line-height-20;
+            font-weight: $font-600;
+        }
+        
+        p.texte12-20-italic {
+            line-height: $line-height-20;
+            font-weight: $font-300;
+            font-style: italic;
+        }
+        
+        p.texte-explicatif {
+            line-height: $line-height-12;
+            font-size: 9px;
+            font-style: italic;
+            margin: 10px 0px;
+        }
+        
+        p.error-message {
+            display:none;
+
+            &.error-message-style {
+                margin: 5px 0px;
+                color: $orange;
+                font-size: 11px;
+                font-weight: 500;
+                line-height: $line-height-12;
+            }
+        }
+
+        #error-message.error-message-visible {
+            display: block;
+        }
+        
+        .item-border {
+            padding: 20px 0px;
+            border-bottom: $border-content-texte; 
+        }
+        
+        .item {
+            padding: 20px 0px;
+        }
+        
+        .sous-item {
+            margin-bottom: 15px;
+            
+            p.grey-medium {
+                color: $grey-medium;
+            }
+        }
+        
+        .sous-item:last-child {
+            margin-bottom: inherit;
+        }
+        
+        .document-televerse {
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            
+            .doc-name {
+                padding: 0 10px;
+                
+                &.grey-medium {
+                    color: $grey-medium;
+                }
+            }
+            
+            .doc-size {
+                position: relative;
+                font-size: 10px;
+                font-weight: $font-500;
+                padding-left: 11px;
+                line-height: $line-height-14;
+                
+                &.grey-light {
+                    color: $grey-light;
+                }
+
+                &:before {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: 1px;
+                    height: 13px;
+                    background-color: $grey-light;
+                }
+            }
+        }
+        
+        h3.grey-light {
+            color: $grey-light;
+        }
+    }
+}

@@ -1,0 +1,70 @@
+// Cookies
+
+.cookie-bloc {
+    input[id="close-cookie"],
+    input[id="accept-cookie"] {
+        display: none;
+    }
+            
+    #close-cookie:checked ~ .cookie-container,
+    #accept-cookie:checked ~ .cookie-container{
+        display:none;
+    }
+
+	.cookie-container {
+		width: 100%;
+		position: fixed;
+	    left: 0;
+	    bottom: 0;
+	    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(144,71,251,1) 1000%) no-repeat;
+	    border-top: 1px solid rgba(145,160,171,0.35);
+	    padding-top: 20px;
+	    padding-bottom: 20px;
+        box-shadow: 1px 0px 7px 0px rgba(145,160,171,0.2);
+        
+        @media ( max-width: $breakpoint-mobile) {
+            padding-top: 30px;
+        }
+
+	    .cookie-wrapper {
+	    	display: flex;
+	    	align-items: center;
+            max-width: 70%;
+            
+            @media (max-width: $breakpoint-mobile) {
+                max-width: 100%;
+                flex-flow: column wrap;
+                justify-content: center;
+            }
+
+	    	img {
+	    		margin-right: 20px;
+	    	}
+
+	    	p, a.link-cookie {
+	    		color: $secondary-color;
+	    		font-size: 11px;
+	    		font-weight: $font-600;
+	    		line-height: $line-height-14;
+	    	}
+            
+            label.button-inline {
+                margin-left: 20px;
+            }
+	    	
+
+		    label.close-cookie {
+		    	position: absolute;
+		    	top: 10px;
+		    	right: 0px;
+                cursor: pointer;
+		    }
+            
+            .cookie-box {
+                display: flex;
+                align-items: center;
+                margin-bottom: 20px;
+            }
+	    }
+	}
+}

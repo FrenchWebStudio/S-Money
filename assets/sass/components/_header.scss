@@ -16,8 +16,14 @@ header {
             justify-content: center;
             padding: 10px;
 
-            &.step-in-progress{
+            &.step-in-progress {
                 border-bottom: 3px solid $primary-color;
+            }
+
+            &:not(.step-in-progress) {
+                a {
+                    cursor: not-allowed;
+                }
             }
 
             &:before {
@@ -40,7 +46,8 @@ header {
                 right: 0px;
             }
 
-            p {
+            a {
+                font-size: 15px;
                 color: $secondary-color;
                 margin-bottom: 0;
             }
