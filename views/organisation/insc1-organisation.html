@@ -11,6 +11,8 @@
 
 <body class="body-header">
     <header>
+        <input type="checkbox" id="mobile-menu" name="mobile-menu">
+        <label for="mobile-menu">Menu <img src="../../assets/img/menu.svg"></label>
         <ul class="steps">
             <li class="step-box step-in-progress">
                 <a href="#" class="nav-link-step"><h1 class="nav-link-step">Mon organisation</h1></a>
@@ -54,7 +56,8 @@
                             <div class="custom-select select-country">
                                 <label for="select-country"><h3>Pays d'immatriculation</h3></label>
                                 <select id="select-country">
-                                    <option value="AL">Allemagne</option>
+                                    <div>coucou</div>
+                                    <option value="AL"><span>Allemagne</span></option>
                                     <option value="AU">Australie</option>
                                     <option value="AT">Autriche</option>
                                     <option value="BE">Belgique</option>
@@ -108,14 +111,60 @@
                             <label for="siret"><h3>Siret</h3></label>
                             <input id="siret" name="siret" type="text" placeholder="362 521 879 00034">
                         </div>
+                        
+                        <div class="sous-item item-hidden">
+                            <label for="numero-enregistrement"><h3>Numéro d'enregistrement</h3></label>
+                            <input id="numero-enregistrement" name="numero-enregistrement" type="text" placeholder="362 521 879 00034">
+                        </div>
+                        
+                        <div class="sous-item item-hidden">
+                            <label for="ridet"><h3>Ridet</h3></label>
+                            <input id="ridet" name="ridet" type="text" placeholder="362 521 879 00034">
+                        </div>
+                        
+                        <div class="sous-item item-hidden">
+                            <label for="tahiti"><h3>Numéro T.A.H.I.T.I</h3></label>
+                            <input id="tahiti" name="tahiti" type="text" placeholder="362 521 879 00034">
+                        </div>
+                        
+                        <div class="sous-item item-hidden double-column">
+                            <label for="rna"><h3>RNA</h3></label>
+                            <input id="rna" name="rna" type="text" placeholder="362 521 879 00034">
+                            <label for="siret-asso" class="titre-tooltip">
+                                <div>
+                                    <h3>SIRET</h3>
+                                    <span class="optional-input"> - Facultatif</span>
+                                </div>
+                                <div class="special-text">
+                                <img src="../../assets/img/Info-Icon.svg">
+                                <span class="special-text__tooltip">
+                                Les associations n’ayant pas un numéro SIRET n’ont pas à fournir cette information.
+                                </span>
+                            </div>
+                            </label>
+                            <input id="siret-asso" name="siret-asso" type="text" placeholder="362 521 879 00034">
+                        </div>
+                        
                         <div class="sous-item">
                             <label for="date-immatriculation"><h3>Date d'immatriculation</h3></label>
                             <input id="date-immatriculation" name="date-immatriculation" type="text" placeholder="JJ/MM/AAAA">
                         </div>
+                        
+                        <div class="sous-item item-hidden">
+                            <label for="date-enregistrement"><h3>Date d'enregistrement</h3></label>
+                            <input id="date-enregistrement" name="date-enregistrement" type="text" placeholder="362 521 879 00034">
+                        </div>
+                        
                         <div class="sous-item">
                             <label for="forme-jurique"><h3>Forme juridique</h3></label>
                             <input id="forme-juridique" name="forme-juridique" type="text" placeholder="SARL">
                         </div>
+                        
+                        <div class="sous-item item-hidden">
+                            <label for="nom-association"><h3>Nom de l'association</h3></label>
+                            <input id="nom-association" name="nom-association" type="text" placeholder="362 521 879 00034">
+                        </div>
+                        
                         <div class="sous-item">
                             <label for="raison-sociale"><h3>Raison sociale</h3></label>
                             <input id="raison-sociale" name="raison sociale" type="text" placeholder="Handi Ski">
@@ -125,7 +174,7 @@
                             <input id="code-naf" name="code-naf" type="text" placeholder="96.04Z">
                         </div>
                         <div class="sous-item">
-                            <label for="code-naf" class="titre-tooltip">
+                            <label for="objectif-ca" class="titre-tooltip">
                                 <h3>Objectif C.A période en cours H.T</h3>
                                 <div class="special-text">
                                 <img src="../../assets/img/Info-Icon.svg">
@@ -135,10 +184,25 @@
                             </div>
                             </label>
                             
-                            <input id="code-naf" name="code-naf" type="text" placeholder="Saisissez votre chiffre..." class="italic-placeholder">
+                            <input id="objectif-ca" name="objectif-ca" type="text" placeholder="Saisissez votre chiffre..." class="italic-placeholder">
                         </div>
+                        
+                        <div class="sous-item item-hidden">
+                            <label for="objectif-ca-asso" class="titre-tooltip">
+                                <h3>Objectif C.A ou revenus période en cours</h3>
+                                <div class="special-text">
+                                <img src="../../assets/img/Info-Icon.svg">
+                                <span class="special-text__tooltip">
+                                Cette informatiion est requise dans un souci de connaissance du client et de la relation d'affaires afin d'évaluer les risques de blanchiment de capitaux et de financement du terrorisme.
+                                </span>
+                            </div>
+                            </label>
+                            
+                            <input id="objectif-ca-asso" name="objectif-ca-asso" type="text" placeholder="Saisissez votre chiffre..." class="italic-placeholder">
+                        </div>
+                        
                         <div class="sous-item">
-                            <label for="code-naf" class="titre-tooltip">
+                            <label for="exercice-precedent" class="titre-tooltip">
                                 <div>
                                     <h3>C.A Exercice précédent H.T</h3>
                                     <span class="optional-input"> - Facultatif</span>
@@ -151,8 +215,28 @@
                             </div>
                             </label>
                             
-                            <input id="code-naf" name="code-naf" type="text" placeholder="Saisissez votre chiffre..." class="italic-placeholder">
+                            <input id="exercice-precedent" name="exercice-precedent" type="text" placeholder="Saisissez votre chiffre..." class="italic-placeholder">
                         </div>
+                        
+                        <div class="sous-item item-hidden">
+                            <label for="exercice-precedent-asso" class="titre-tooltip">
+                                <div>
+                                    <h3>Objectif C.A ou recettes période précédente</h3>
+                                    <span class="optional-input"> - Facultatif</span>
+                                </div>
+                                <div class="special-text">
+                                <img src="../../assets/img/Info-Icon.svg">
+                                <span class="special-text__tooltip">
+                                Cette informatiion est requise dans un souci de connaissance du client et de la relation d'affaires afin d'évaluer les risques de blanchiment de capitaux et de financement du terrorisme. Les associations enregistrées depuis moins d’un exercice comptable n’ont pas à fournir cette information.
+                                </span>
+                            </div>
+                            </label>
+                            
+                            <input id="exercice-precedent-asso" name="exercice-precedent-asso" type="text" placeholder="Saisissez votre chiffre..." class="italic-placeholder">
+                        </div>
+                    </div>
+                    
+                    <div class="item">
                     </div>
                     <div>
                         <button class="button-default">

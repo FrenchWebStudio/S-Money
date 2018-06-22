@@ -22,6 +22,7 @@ button {
 	-webkit-font-smoothing: antialiased;
 	cursor: pointer;
     border-width: 0px;
+    text-align: center;
     
     @media(max-width:$breakpoint-mobile){
         display:block;

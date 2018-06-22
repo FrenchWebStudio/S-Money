@@ -1,9 +1,59 @@
 header {
     margin-bottom: 90px;
     
+    @media(max-width:$breakpoint-mobile){
+        margin-bottom: inherit;
+        height: 90px;
+        width: 100%;
+        background: white;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding-right: 16px;
+        
+    }
+    
+    #mobile-menu{
+        display: none;
+        
+        &:checked ~ .steps{
+            display: flex;
+        }
+    }
+    
+    label[for="mobile-menu"]{
+        display: none;
+        font-size: $heading-2-font-size;
+        font-weight: $font-700;
+        z-index: 10;
+        cursor: pointer;
+        
+        img{
+            padding-left: 10px;
+        }
+        
+        @media(max-width:$breakpoint-mobile){
+            display: flex;
+            align-items: center;
+        }
+    }
+    
     .steps {
         display: flex;
         flex-flow: row wrap;
+        
+        @media(max-width:$breakpoint-mobile){
+            position: absolute;
+            display: none;
+            padding-top: 80px;
+            width: 80%;
+            top: 0;
+            right: 0;
+            z-index: 9;
+            box-shadow: $box-shadow-menu;
+            flex-flow: column wrap;
+        }
+        
 
         .step-box {
             position: relative;
@@ -16,17 +66,38 @@ header {
             justify-content: center;
             padding: 10px;
             
+            @media(max-width:$breakpoint-mobile){
+                height: 12vh;
+                background: white;
+                border: $border-content;
+                text-align: left;
+                padding: 10px 10px 10px 50px;
+                flex-flow: row wrap;
+                justify-content: flex-start
+            }
+            
             &.validate-step img{
                 position: absolute;
                 top: 20px;
+                
+                @media(max-width:$breakpoint-mobile){
+                    top: inherit;
+                    left: 10px;
+                }
             }
 
             &.step-in-progress {
                 border-bottom: 3px solid $primary-color;
                 
+                @media(max-width:$breakpoint-mobile){
+                    border-bottom: inherit;
+                    border-left: 3px solid $primary-color;
+                }
+                
                 h1.nav-link-step{
                     font-size: $heading-header;
                     color: $primary-color;
+                    line-height: $line-height-18;
                 }
             }
 

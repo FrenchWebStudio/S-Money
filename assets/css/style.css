@@ -115,6 +115,8 @@ select option {
   font-size: 12px;
   -webkit-appearance: inherit;
   background-color: white; }
+  select option span:before {
+    content: url(../img/flags/001-slovakia.svg); }
 
 .custom-select {
   width: 100%;
@@ -2439,7 +2441,8 @@ button:focus, button:active {
   border-radius: 4px;
   -webkit-font-smoothing: antialiased;
   cursor: pointer;
-  border-width: 0px; }
+  border-width: 0px;
+  text-align: center; }
   @media (max-width: 800px) {
     .button-default {
       display: block;
@@ -2602,6 +2605,44 @@ a {
 
 header {
   margin-bottom: 90px; }
+  @media (max-width: 800px) {
+    header {
+      margin-bottom: inherit;
+      height: 90px;
+      width: 100%;
+      background: white;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end;
+      padding-right: 16px; } }
+  header #mobile-menu {
+    display: none; }
+    header #mobile-menu:checked ~ .steps {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+  header label[for="mobile-menu"] {
+    display: none;
+    font-size: 18px;
+    font-weight: 700;
+    z-index: 10;
+    cursor: pointer; }
+    header label[for="mobile-menu"] img {
+      padding-left: 10px; }
+    @media (max-width: 800px) {
+      header label[for="mobile-menu"] {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; } }
   header .steps {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2610,6 +2651,21 @@ header {
     -webkit-box-direction: normal;
         -ms-flex-flow: row wrap;
             flex-flow: row wrap; }
+    @media (max-width: 800px) {
+      header .steps {
+        position: absolute;
+        display: none;
+        padding-top: 80px;
+        width: 80%;
+        top: 0;
+        right: 0;
+        z-index: 9;
+        -webkit-box-shadow: 0px 0px 9px 9px rgba(145, 160, 171, 0.35);
+                box-shadow: 0px 0px 9px 9px rgba(145, 160, 171, 0.35);
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: column wrap;
+                flex-flow: column wrap; } }
     header .steps .step-box {
       position: relative;
       -webkit-box-flex: 1;
@@ -2628,14 +2684,37 @@ header {
           -ms-flex-pack: center;
               justify-content: center;
       padding: 10px; }
+      @media (max-width: 800px) {
+        header .steps .step-box {
+          height: 12vh;
+          background: white;
+          border: 1px solid rgba(145, 160, 171, 0.35);
+          text-align: left;
+          padding: 10px 10px 10px 50px;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+              -ms-flex-flow: row wrap;
+                  flex-flow: row wrap;
+          -webkit-box-pack: start;
+              -ms-flex-pack: start;
+                  justify-content: flex-start; } }
       header .steps .step-box.validate-step img {
         position: absolute;
         top: 20px; }
+        @media (max-width: 800px) {
+          header .steps .step-box.validate-step img {
+            top: inherit;
+            left: 10px; } }
       header .steps .step-box.step-in-progress {
         border-bottom: 3px solid #924FFF; }
+        @media (max-width: 800px) {
+          header .steps .step-box.step-in-progress {
+            border-bottom: inherit;
+            border-left: 3px solid #924FFF; } }
         header .steps .step-box.step-in-progress h1.nav-link-step {
           font-size: 15px;
-          color: #924FFF; }
+          color: #924FFF;
+          line-height: 18px; }
       header .steps .step-box:not(.step-in-progress) a {
         cursor: not-allowed; }
       header .steps .step-box:before {
@@ -2722,6 +2801,9 @@ header {
             flex-flow: column wrap; }
     .content-aside .content-left.padding-top-content {
       padding: 40px; }
+      @media (max-width: 800px) {
+        .content-aside .content-left.padding-top-content {
+          padding: 40px 25px; } }
     @media (max-width: 800px) {
       .content-aside .content-left {
         padding: 40px 25px; } }
@@ -2794,10 +2876,31 @@ header {
                 justify-content: space-between; }
         .content-aside .content-left .item.double-column .sous-item {
           width: 48%; }
+          @media (max-width: 800px) {
+            .content-aside .content-left .item.double-column .sous-item {
+              width: 100%; } }
       .content-aside .content-left .item .sous-item {
         margin-bottom: 15px; }
         .content-aside .content-left .item .sous-item .grey-medium {
           color: #837F87; }
+        .content-aside .content-left .item .sous-item.item-hidden {
+          display: none; }
+        .content-aside .content-left .item .sous-item.double-column {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+              -ms-flex-flow: row wrap;
+                  flex-flow: row wrap;
+          -webkit-box-pack: justify;
+              -ms-flex-pack: justify;
+                  justify-content: space-between; }
+          .content-aside .content-left .item .sous-item.double-column label {
+            width: 48%; }
+            @media (max-width: 800px) {
+              .content-aside .content-left .item .sous-item.double-column label {
+                width: 100%; } }
       .content-aside .content-left .item .sous-item:last-child {
         margin-bottom: inherit; }
     .content-aside .content-left .document-televerse {
@@ -2838,6 +2941,12 @@ header {
       color: #B5B2B8; }
     .content-aside .content-left .double-button a:first-child {
       margin-right: 15px; }
+      @media (max-width: 800px) {
+        .content-aside .content-left .double-button a:first-child {
+          margin-right: inherit; } }
+    @media (max-width: 800px) {
+      .content-aside .content-left .double-button a:last-child {
+        margin-top: 20px; } }
 
 html, body {
   width: 100%;
