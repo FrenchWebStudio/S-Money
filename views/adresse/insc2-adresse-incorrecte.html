@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+      <meta charset="utf-8">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <title>S-Money</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="../../assets/css/style.css" rel="stylesheet">
+</head>
+
+<body class="body-header">
+    <header>
+        <input type="checkbox" id="mobile-menu" name="mobile-menu">
+        <label for="mobile-menu">Menu <img src="../../assets/img/menu.svg"></label>
+        <ul class="steps">
+            <li class="step-box validate-step">
+                <a href="#" class="nav-link-step">Mon organisation</a>
+                <img src="../../assets/img/check-header.svg">
+            </li>
+            <li class="step-box step-in-progress">
+                <a href="#" class="nav-link-step"><h1 class="nav-link-step">Mon adresse</h1></a>
+            </li>
+            <li class="step-box">
+                <a href="#">Mes représentants et mandataires</a>
+            </li>
+            <li class="step-box">
+                <a href="#">Mes bénéficiaires effectifs</a>
+            </li>
+            <li class="step-box">
+                <a href="#">Mes informations bancaires</a>
+            </li>
+            <li class="step-box">
+                <a href="#">Conditions générales d’utilisation</a>
+            </li>
+        </ul>
+    </header>
+    
+    <section class="container-fluid">
+        <div class="content-aside wrapper">
+            <div class="content-left padding-top-content">
+                
+                <form class="form-position">
+                    <div>
+                        <div class="item double-column item-border">
+                            <div class="sous-item input-double-column">
+                                <h3 class="grey-light">Adresse du siège social</h3>
+                                <p class="grey-medium">68, Rue André Joineau</p>
+                            </div>
+                            <div class="sous-item input-double-column">
+                                <h3 class="grey-light">Complément d'adresse</h3>
+                                <p class="grey-medium">Domaine du Parc</p>
+                            </div>
+                            <div class="sous-item input-double-column">
+                                <h3 class="grey-light">Code postal</h3>
+                                <p class="grey-medium">74190</p>
+                            </div>
+                            <div class="sous-item input-double-column">
+                                <h3 class="grey-light">Ville</h3>
+                                <p class="grey-medium">Le Pré-Saint-Gervais</p>
+                            </div>
+                        </div>
+                
+                        <div class="item item-border">
+                            <p class="texte12-20">Cette adresse est-elle correcte ? 
+                                <input id="adress-verification" name="adress-verification" class="tgl tgl-light" type="checkbox">
+                                <label class="tgl-btn" for="adress-verification">
+                                </label>
+                            </p>
+                        </div>
+                        <div class="item">
+                            <h3>Envoyez-nous votre KBIS actualisé</h3>
+                        
+                            <label for="televerser">
+                                <div class="televerser">
+                                    <p>Glissez/déposez un document ici 
+                                    <br/>ou
+                                    </p>
+                                    <div class="icon-televerser">
+                                    <img src="../../assets/img/envoyer-icon.svg">
+                                    <span>Télécharger</span>
+                                    </div>
+                                    <input id="televerser" name="televerser" type="file"  multiple onchange="return fileValidation()">
+                                </div>
+                            </label>
+                            <p class="error-message error-message-style" id="error-message">Format de fichier non valide</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <button class="button-default">Je confirme</button>
+                    </div>
+                </form>
+
+            </div>
+
+            <div class="content-right">
+                <img src="../../assets/img/flag-icon.svg">
+                <p>Les documents fournis ne seront transmis à aucun acteur tiers, et uniquement utilisés pour assurer la bonne gestion de vos encaissements. Veillez à ce que votre Kbis date de moins de 3 mois.</p>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="content-footer">
+                        <div class="content-footer-1">
+                            <a href="http://www.s-money.fr/" target="_blank">
+                                <img src="../../assets/img/footer/logo-s-money.png"class="logo-s-money" alt="S-Money">
+                            </a>
+                            <p>filiale de</p>
+                            <a href="https://www.natixis.com/natixis/jcms" target="_blank">
+                                <img src="../../assets/img/footer/logo-natixis.png" class="logo-natixis" alt="Natixis">
+                            </a>
+                        </div>
+                        <div class="content-footer-2">
+                            <a href="#" class="link-footer link-footer-mobile" title="Mentions Légales">Mentions Légales</a>
+                            <a href="#" class="link-footer log-out" title="Déconnexion">Déconnexion</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="../../assets/js/index.js"></script>
+</body>
+
+</html>

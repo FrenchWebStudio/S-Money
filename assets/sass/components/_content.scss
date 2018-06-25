@@ -59,6 +59,8 @@
         padding: 0px 40px 40px 40px;
         display: flex;
         flex-flow: column wrap;
+        justify-content: space-between;
+        
         
         &.padding-top-content{
             padding: 40px;
@@ -92,7 +94,7 @@
         
         .border-h2 {
             padding: 20px 0px;
-            border-bottom: $border-content-titre;  
+            border-bottom: $border-content-titre;
         }
         
         .subtitle-h2 {
@@ -159,7 +161,8 @@
                 display: flex;
                 flex-flow: row wrap;
                 justify-content: space-between;
-                .sous-item{
+                
+                .sous-item.input-double-column{
                     width: 48%;
                     
                     @media(max-width:$breakpoint-mobile){
@@ -170,6 +173,8 @@
             
             .sous-item {
                 margin-bottom: 15px;
+                width: 100%;
+                
 
                 .grey-medium {
                     color: $grey-medium;
@@ -179,18 +184,8 @@
                     display: none;
                 }
                 
-                &.double-column{
-                    display: flex;
-                    flex-flow: row wrap;
-                    justify-content: space-between;
-                    label{
-                        width: 48%;
-
-                        @media(max-width:$breakpoint-mobile){
-                            width: 100%;
-                        }
-                    }
-                }
+                
+                
             }
             
             .sous-item:last-child {
