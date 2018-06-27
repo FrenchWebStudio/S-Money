@@ -99,3 +99,92 @@ function closeAllSelect(elmnt) {
 /*if the user clicks anywhere outside the select box,
 then close all select boxes:*/
 document.addEventListener("click", closeAllSelect);
+
+
+// Formulaire Organisation selon type d'organisation //
+
+$(function() {
+    $(".select-organization-type").children(".select-selected").on("click",function() {
+        var selectedOrganization = $(this).text();
+        $(".hideable").hide();
+        if(selectedOrganization=="Société")
+        {
+            $("#select-country-2").show();
+            $("#siret-2").show();
+            $("#date-immatriculation-2").show();
+            $("#forme-juridique-2").show();
+            $("#raison-sociale-2").show();
+            $("#code-naf-2").show();
+            $("#objectif-ca-2").show();
+            $("#exercice-precedent-2").show();
+           
+        }
+        else if(selectedOrganization=="Entreprise individuelle")
+        {
+       		$("#select-country-2").show();
+            $("#siret-2").show();
+            $("#date-immatriculation-2").show();
+            $("#raison-sociale-2").show();
+            $("#code-naf-2").show();
+            $("#objectif-ca-2").show();
+            $("#exercice-precedent-2").show();
+        }
+        else if(selectedOrganization=="Association")
+        {
+       		$("#select-country-2").show();
+            $("#rna-2").show();
+            $("#siret-asso-2").show();
+            $("#date-enregistrement-2").show();
+            $("#nom-association-2").show();
+            $("#objectif-ca-asso-2").show();
+            $("#exercice-precedent-asso-2").show();
+        }
+        else if(selectedOrganization=="Particulier")
+        {
+       		$("#select-gender-2").show();
+            $("#nom-particulier-2").show();
+            $("#prenom-particulier-2").show();
+            $("#select-nationality-2").show();
+            $("#select-country-born-2").show();
+            $("#birthday-2").show();
+            $("#birth-city-2").show();
+            $("#residence-state-2").show();
+            $("#select-identity-2").show();
+            $("#identity-file-2").show();
+            $("#objectif-revenus-particulier-2").show();
+            $("#revenus-precedent-particulier-2").show();
+        }
+    }).click();
+});
+
+// Formulaire Organisation selon pays //
+
+$(function() {
+    $(".select-country").children(".select-selected").on("click",function() {
+        var selectedCountry = $(this).text();
+        $(".hideable-country").hide();
+        if(selectedCountry=="France" || selectedCountry=="Guadeloupe" || selectedCountry=="Guyane" || selectedCountry=="La Réunion" || selectedCountry=="Martinique" || selectedCountry=="Mayotte" || selectedCountry=="Saint-Barthélemy" || selectedCountry=="Saint-Martin (partie française)" || selectedCountry=="Saint Pierre et Miquelon" || selectedCountry=="Wallis et Futuna")
+        {
+            $("#siret-label").show();
+            $("#immatriculation-label").show();
+           
+        }
+        else if(selectedCountry=="Nouvelle-Calédonie")
+        {
+       		$("#ridet-label").show();
+            $("#immatriculation-label").show();
+
+        }
+        else if(selectedCountry=="Polynésie Française")
+        {
+       		$("#tahiti-label").show();
+            $("#immatriculation-label").show();
+        }
+        else if(selectedCountry!="France" && selectedCountry!="Nouvelle-Calédonie" && selectedCountry!="Polynésie Française" && selectedCountry!="Guadeloupe" && selectedCountry!="Guyane" && selectedCountry!="La Réunion" && selectedCountry!="Martinique" && selectedCountry!="Mayotte" && selectedCountry!="Saint-Barthélemy" && selectedCountry!="Saint-Martin (partie française)" && selectedCountry!="Saint Pierre et Miquelon" && selectedCountry!="Wallis et Futuna")
+        {
+       		$("#register-label").show();
+            $("#register-date-label").show();
+        }
+    }).click();
+});
+

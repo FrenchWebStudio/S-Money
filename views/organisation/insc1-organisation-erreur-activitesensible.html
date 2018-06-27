@@ -40,7 +40,8 @@
             <div class="content-left padding-top-content">
                 
                 <form class="form-position">
-                    <div class="item double-column">
+                    <div>
+                    <div class="item double-column item-border">
                         <div class="sub-item">
                             <div class="custom-select select-organization-type">
                                 <label for="select-organization-type"><h3>Vous êtes ?</h3></label>
@@ -338,7 +339,7 @@
                         </div>
                         <div class="sub-item hideable" id="code-naf-2">
                             <label for="code-naf"><h3>Code NAF</h3></label>
-                            <input id="code-naf" name="code-naf" type="text" placeholder="96.04Z">
+                            <input id="code-naf" name="code-naf" type="text" placeholder="96.0KZ - Hôtellerie" class="input-error">
                         </div>
                         <div class="sub-item hideable" id="objectif-ca-2">
                             <label for="objectif-ca" class="titre-tooltip">
@@ -433,9 +434,57 @@
                             <input id="revenus-precedent-particulier" name="revenus-precedent-particulier" type="text" placeholder="Saisissez votre chiffre..." class="italic-placeholder">
                         </div>
                     </div>
+                        
+                    <div class="item item-border">
+                        <p class="error-message error-message-visible error-message-style">Nous avons détecté l’activité 96.04KZ comme une activité sensible.
+                        </p>
+                        <p class="precision-text">Aidez-nous à préciser l’identification de votre organisation !
+                        </p>
+                    </div>
+                        
+                    <div class="item">
+                        <div class="sub-item">
+                            <h3>ENVOYEZ-NOUS LE JUSTIFICATIF D’IDENTITÉ DU REPRÉSENTANT</h3>
+
+                            <label for="televerser">
+                                <div class="televerser">
+                                    <p>Glissez/déposez un document ici 
+                                    <br/>ou
+                                    </p>
+                                    <div class="icon-televerser">
+                                        <img src="../../assets/img/envoyer-icon.svg">
+                                        <span>Télécharger</span>
+                                        <input id="televerser" name="televerser" type="file"  multiple onchange="return fileValidation()">
+                                    </div>
+                                </div>
+                            </label>
+                            <p class="error-message error-message-style" id="error-message">Format de fichier non valide</p>
+                        </div>
+                        <div class="sub-item">
+                            <h3>ENVOYEZ-NOUS VOTRE DERNIÈRE LIASSE FISCALE</h3>
+
+                            <label for="televerser">
+                                <div class="televerser">
+                                    <p>Glissez/déposez un document ici 
+                                    <br/>ou
+                                    </p>
+                                    <div class="icon-televerser">
+                                        <img src="../../assets/img/envoyer-icon.svg">
+                                        <span>Télécharger</span>
+                                        <input id="televerser" name="televerser" type="file"  multiple onchange="return fileValidation()">
+                                    </div>
+                                </div>
+                            </label>
+                            <p class="error-message error-message-style" id="error-message">Format de fichier non valide</p>
+                        </div>
+                        
+                    </div>
+                    </div>
+                    
+                    
                     
                     <div>
-                        <button class="button-default">
+                        <button disabled class="button-default">
                             Je confirme
                         </button>
                     </div>
@@ -447,20 +496,6 @@
             <div class="content-right">
                 <img src="../../assets/img/document-icon.svg">
                 <p>Complétez les informations caractéristiques de votre organisation. Les informations fournies ne seront transmises à aucun acteur tiers, et uniquement utilisées pour assurer la bonne gestion de vos encaissements.</p>
-            </div>
-        </div>
-    </section>
-    <section class="pop-up-bloc">
-        <input id="close-cookie" name="close-cookie" type="checkbox">
-        <input id="accept-cookie" name="accept-cookie" type="checkbox">
-        
-        <div class="pop-up-background">
-            <div class="pop-up-box">
-                <p>Dans le cadre de la signature et de l’exécution du présent contrat, et plus généralement de notre relation, S-money recueille et traite des données à caractère personnel vous concernant et concernant les personnes physiques intervenant dans le cadre de cette relation (mandataire, représentant légal, contact désigné, bénéficiaire effectif, ...). Les informations vous expliquant pourquoi et comment ces données sont utilisées, combien de temps elles seront conservées ainsi que les droits dont vous disposez sur vos données figurent dans notre notice d’information sur le traitement des données à caractère personnel. Cette notice est portée à votre connaissance lors de la première collecte de vos données. Vous pouvez y accéder à tout moment, sur notre site internet en <a href="" class="link-pop-up">cliquant ici</a>. S-money communiquera en temps utile les évolutions apportées à ces informations.</p>
-                <label for="accept-cookie" class="button-inline">C'est compris</label>
-                <label for="close-cookie" class="close-pop-up">
-                    <img src="../../assets/img/cookie-bloc/close-icon.svg" class="close-cookie-img" alt="Close">
-                </label>
             </div>
         </div>
     </section>

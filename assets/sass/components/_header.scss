@@ -65,6 +65,11 @@ header {
             align-items: center;
             justify-content: center;
             padding: 10px;
+            cursor: not-allowed;
+            
+            *{
+                cursor: not-allowed;
+            }
             
             @media(max-width:$breakpoint-mobile){
                 height: 12vh;
@@ -74,6 +79,14 @@ header {
                 padding: 10px 10px 10px 50px;
                 flex-flow: row wrap;
                 justify-content: flex-start
+            }
+            
+            &.validate-step{
+                cursor: pointer;
+                
+                *{
+                    cursor: pointer;
+                }
             }
             
             &.validate-step img{
@@ -88,6 +101,11 @@ header {
 
             &.step-in-progress {
                 border-bottom: 3px solid $primary-color;
+                cursor: pointer;
+                
+                *{
+                    cursor: pointer;
+                }
                 
                 @media(max-width:$breakpoint-mobile){
                     border-bottom: inherit;
@@ -101,11 +119,6 @@ header {
                 }
             }
 
-            &:not(.step-in-progress) {
-                a {
-                    cursor: not-allowed;
-                }
-            }
 
             &:before {
                 position: absolute;

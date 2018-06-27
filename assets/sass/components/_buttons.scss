@@ -24,6 +24,11 @@ button {
     border-width: 0px;
     text-align: center;
     
+    &.not-available-button{
+        background: $button-not-available-bg;
+        cursor: not-allowed;
+    }
+    
     @media(max-width:$breakpoint-mobile){
         display:block;
         width: 100%;

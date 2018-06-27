@@ -25,6 +25,10 @@ input[type="text"], select {
     padding-left: 10px;
     color: $secondary-color;
     
+    &.input-error{
+        border: 1px solid $orange;
+    }
+    
     &::placeholder {
         color: $secondary-color;
         -webkit-transition: all 0.2s ease;
@@ -70,6 +74,14 @@ select {
 .custom-select {
     width: 100%;
     position: relative;
+    
+    &.select-error .select-selected{
+        border:1px solid $orange;
+        
+        &:after{
+            background: url("../../assets/img/stroke-error.svg") no-repeat 50%;
+        }
+    }
 
     select {
         display: none;

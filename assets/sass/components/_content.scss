@@ -88,7 +88,7 @@
             color: $green;
         }
         
-        h2.erreur-h2 {
+        h2.error-h2 {
             color: $orange;
         }
         
@@ -109,18 +109,18 @@
             line-height: $line-height-12;
         }
         
-        p.texte12-20 {
+        p.text12-20 {
             line-height: $line-height-20;
             font-weight: $font-600;
         }
         
-        p.texte12-20-italic {
+        p.text12-20-italic {
             line-height: $line-height-20;
             font-weight: $font-300;
             font-style: italic;
         }
         
-        p.texte-explicatif {
+        p.precision-text {
             line-height: $line-height-12;
             font-size: 9px;
             font-style: italic;
@@ -133,7 +133,9 @@
             text-transform: none;
         }
         
-        p.error-message {
+        // Error Message
+        
+        .error-message {
             display:none;
 
             &.error-message-style {
@@ -143,11 +145,11 @@
                 font-weight: 500;
                 line-height: $line-height-12;
             }
-        }
-
-        #error-message.error-message-visible {
+            &.error-message-visible {
             display: block;
         }
+        }
+
         
         .item-border {
             padding: 20px 0px;
@@ -162,7 +164,7 @@
                 flex-flow: row wrap;
                 justify-content: space-between;
                 
-                .sous-item.input-double-column{
+                .sub-item.input-double-column{
                     width: 48%;
                     
                     @media(max-width:$breakpoint-mobile){
@@ -171,7 +173,7 @@
                 }
             }
             
-            .sous-item {
+            .sub-item {
                 margin-bottom: 15px;
                 width: 100%;
                 
@@ -180,7 +182,7 @@
                     color: $grey-medium;
                 }
                 
-                &.item-hidden{
+                &.hideable{
                     display: none;
                 }
                 
@@ -188,13 +190,13 @@
                 
             }
             
-            .sous-item:last-child {
+            .sub-item:last-child {
                 margin-bottom: inherit;
             }
         }
         
         
-        .document-televerse {
+        .uploaded-document {
             display: flex;
             flex-flow: row wrap;
             align-items: center;
